@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "1f5ad4e7f58bbc982bc36dd28b5c292a"
+build_time: [514422289, 100144000]
+inputs:
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/FlickrSwift/FlickrSwift/ViewController.swift": [514422286, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/FlickrSwift/FlickrSwift/AppDelegate.swift": [514422286, 0]
