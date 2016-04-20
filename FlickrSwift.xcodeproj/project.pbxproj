@@ -14,6 +14,7 @@
 		F74CBBCA1CC6F10E00C97095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74CBBC81CC6F10E00C97095 /* LaunchScreen.storyboard */; };
 		F74CBBD51CC6F10E00C97095 /* FlickrSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74CBBD41CC6F10E00C97095 /* FlickrSwiftTests.swift */; };
 		F74CBBE01CC6F10E00C97095 /* FlickrSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74CBBDF1CC6F10E00C97095 /* FlickrSwiftUITests.swift */; };
+		F74CBBEE1CC7012A00C97095 /* FlickrRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74CBBED1CC7012A00C97095 /* FlickrRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F74CBBDB1CC6F10E00C97095 /* FlickrSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74CBBDF1CC6F10E00C97095 /* FlickrSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSwiftUITests.swift; sourceTree = "<group>"; };
 		F74CBBE11CC6F10E00C97095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F74CBBED1CC7012A00C97095 /* FlickrRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F74CBBC61CC6F10E00C97095 /* Assets.xcassets */,
 				F74CBBC81CC6F10E00C97095 /* LaunchScreen.storyboard */,
 				F74CBBCB1CC6F10E00C97095 /* Info.plist */,
+				F74CBBED1CC7012A00C97095 /* FlickrRequest.swift */,
 			);
 			path = FlickrSwift;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				F74CBBC21CC6F10E00C97095 /* ViewController.swift in Sources */,
 				F74CBBC01CC6F10E00C97095 /* AppDelegate.swift in Sources */,
+				F74CBBEE1CC7012A00C97095 /* FlickrRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Unf-xr-Rzq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Flickr Search-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlickrSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pMO-cN-9A5">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6ND-KA-0by"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yxW-Q3-PQ2">
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="nk2-4Q-dEC"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Wmo-NR-m82"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pMO-cN-9A5" secondAttribute="trailing" id="3Sm-C5-NN0"/>
+                            <constraint firstItem="yxW-Q3-PQ2" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="712-8X-bH2"/>
+                            <constraint firstItem="pMO-cN-9A5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9Z1-iP-hzW"/>
+                            <constraint firstItem="pMO-cN-9A5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D2y-f9-Wg7"/>
+                            <constraint firstItem="pMO-cN-9A5" firstAttribute="leading" secondItem="yxW-Q3-PQ2" secondAttribute="leading" id="QES-dd-k0i"/>
+                            <constraint firstItem="yxW-Q3-PQ2" firstAttribute="top" secondItem="pMO-cN-9A5" secondAttribute="bottom" id="ge0-sH-xN7"/>
+                            <constraint firstItem="pMO-cN-9A5" firstAttribute="trailing" secondItem="yxW-Q3-PQ2" secondAttribute="trailing" id="tvh-ou-hw6"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Flickr Search" id="XcG-no-iqT"/>
+                    <connections>
+                        <outlet property="searchBar" destination="pMO-cN-9A5" id="7pq-Oq-5gO"/>
+                        <outlet property="tableview" destination="yxW-Q3-PQ2" id="hbj-fv-XeR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="FxW-1Q-Kbo"/>
             </objects>
+            <point key="canvasLocation" x="982" y="456"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IJb-6e-QZY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Unf-xr-Rzq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IeQ-93-trg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rDf-rD-CMR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBI-wf-m9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="456"/>
         </scene>
     </scenes>
 </document>
