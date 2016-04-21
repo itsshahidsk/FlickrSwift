@@ -7,6 +7,8 @@ target 'FlickrSwift' do
 
 pod 'SDWebImage', '~>3.7'
 
+pod 'Alamofire', '~>3.3'
+
 end
 
 target 'FlickrSwiftTests' do

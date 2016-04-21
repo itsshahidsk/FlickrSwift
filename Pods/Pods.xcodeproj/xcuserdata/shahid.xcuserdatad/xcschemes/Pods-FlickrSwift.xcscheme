@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AA0FC2B369C15B1048E56179'
+               BlueprintIdentifier = '2ADC799D3EF152AEFC88C2D4'
                BlueprintName = 'Pods-FlickrSwift'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_FlickrSwift.framework'>

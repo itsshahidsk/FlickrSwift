@@ -142,8 +142,8 @@ SWIFT_CLASS("_TtC11FlickrSwift14ViewController")
 @end
 
 
-@interface ViewController (SWIFT_EXTENSION(FlickrSwift))
-- (void)performSearchWithText:(NSString * _Nonnull)searchText;
+@interface ViewController (SWIFT_EXTENSION(FlickrSwift)) <UISearchBarDelegate, UIBarPositioningDelegate>
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
 @end
 
 @class NSIndexPath;
@@ -153,8 +153,9 @@ SWIFT_CLASS("_TtC11FlickrSwift14ViewController")
 @end
 
 
-@interface ViewController (SWIFT_EXTENSION(FlickrSwift)) <UISearchBarDelegate, UIBarPositioningDelegate>
-- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
+@interface ViewController (SWIFT_EXTENSION(FlickrSwift))
+- (void)performSearchWithText:(NSString * _Nonnull)searchText;
+- (void)performAlamofireSearchWithText:(NSString * _Nonnull)searchText;
 @end
 
 @class UITableViewCell;

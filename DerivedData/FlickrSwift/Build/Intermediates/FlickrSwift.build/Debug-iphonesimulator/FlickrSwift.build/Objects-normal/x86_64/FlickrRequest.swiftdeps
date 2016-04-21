@@ -1,32 +1,36 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "kAPIKey"
 - "FlickrRequest"
 provides-nominal:
 - "C11FlickrSwift13FlickrRequest"
 provides-member:
 - ["C11FlickrSwift13FlickrRequest", ""]
 provides-dynamic-lookup:
-- "defaultSession"
 - "invalidResponseError"
+- "defaultSession"
 depends-top-level:
-- !private "??"
-- "String"
 - !private "AnyObject"
-- !private "print"
-- "FlickrRequest"
-- "NSURLSessionConfiguration"
-- !private "NSURL"
-- "Int"
 - !private "NSJSONSerialization"
-- !private "NSCharacterSet"
-- "NSError"
-- "NSURLSession"
-- !private "NSJSONReadingOptions"
-- "StringLiteralType"
 - "NSObject"
+- "NSError"
+- !private "print"
 - "FlickrPhoto"
 - "Dictionary"
+- "Int"
+- !private "NSURL"
+- !private "Alamofire"
+- "String"
+- "FlickrRequest"
+- !private "??"
+- "NSURLSession"
+- "NSURLSessionConfiguration"
+- !private "NSCharacterSet"
+- "StringLiteralType"
+- !private "NSJSONReadingOptions"
+- "kAPIKey"
 depends-member:
+- !private ["Ps9AnyObject", "Alamofire"]
 - !private ["Ps9AnyObject", "FlickrPhoto"]
 - !private ["Ps9AnyObject", "JSONObjectWithData"]
 - !private ["Ps9AnyObject", "NSCharacterSet"]
@@ -43,8 +47,11 @@ depends-member:
 - ["Ps9AnyObject", "deinit"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "invalidResponseError"]
+- !private ["Ps9AnyObject", "kAPIKey"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "responseJSON"]
 - !private ["Ps9AnyObject", "resume"]
+- ["Ps9AnyObject", "searchPhotosUsingAlamofireWithSearchText"]
 - ["Ps9AnyObject", "searchPhotosWithSearchText"]
 - !private ["Ps9AnyObject", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps9AnyObject", "subscript"]
@@ -68,7 +75,11 @@ depends-member:
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["Ps21BitwiseOperationsType", "Distance"]
 - !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Alamofire"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "FlickrPhoto"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
@@ -86,8 +97,10 @@ depends-member:
 - ["Ps11CVarArgType", "defaultSessionConfiguration"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "invalidResponseError"]
+- !private ["Ps11CVarArgType", "kAPIKey"]
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "resume"]
+- ["Ps11CVarArgType", "searchPhotosUsingAlamofireWithSearchText"]
 - ["Ps11CVarArgType", "searchPhotosWithSearchText"]
 - !private ["Ps11CVarArgType", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps11CVarArgType", "userInfo"]
@@ -105,6 +118,7 @@ depends-member:
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "stringByAddingPercentEncodingWithAllowedCharacters"]
+- !private ["Ps28CustomDebugStringConvertible", "Alamofire"]
 - !private ["Ps28CustomDebugStringConvertible", "FlickrPhoto"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
@@ -127,14 +141,21 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "defaultSessionConfiguration"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "invalidResponseError"]
+- !private ["Ps28CustomDebugStringConvertible", "isSuccess"]
+- !private ["Ps28CustomDebugStringConvertible", "kAPIKey"]
 - !private ["Ps28CustomDebugStringConvertible", "map"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "responseJSON"]
+- !private ["Ps28CustomDebugStringConvertible", "result"]
 - !private ["Ps28CustomDebugStringConvertible", "resume"]
+- ["Ps28CustomDebugStringConvertible", "searchPhotosUsingAlamofireWithSearchText"]
 - ["Ps28CustomDebugStringConvertible", "searchPhotosWithSearchText"]
 - !private ["Ps28CustomDebugStringConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "userInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Alamofire"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "FlickrPhoto"]
 - !private ["Ps23CustomStringConvertible", "Generator"]
@@ -154,18 +175,25 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "URLQueryAllowedCharacterSet"]
 - ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "dataTaskWithURL"]
 - ["Ps23CustomStringConvertible", "defaultSession"]
 - ["Ps23CustomStringConvertible", "defaultSessionConfiguration"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "invalidResponseError"]
+- !private ["Ps23CustomStringConvertible", "isSuccess"]
+- !private ["Ps23CustomStringConvertible", "kAPIKey"]
 - !private ["Ps23CustomStringConvertible", "map"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "responseJSON"]
+- !private ["Ps23CustomStringConvertible", "result"]
 - !private ["Ps23CustomStringConvertible", "resume"]
+- ["Ps23CustomStringConvertible", "searchPhotosUsingAlamofireWithSearchText"]
 - ["Ps23CustomStringConvertible", "searchPhotosWithSearchText"]
 - !private ["Ps23CustomStringConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "userInfo"]
+- !private ["Ps23CustomStringConvertible", "value"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Vs10Dictionary", "Index"]
 - ["Vs10Dictionary", "Key"]
@@ -177,8 +205,10 @@ depends-member:
 - ["Ps28DictionaryLiteralConvertible", "Value"]
 - !private ["Ps28DictionaryLiteralConvertible", "subscript"]
 - !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Alamofire"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "FlickrPhoto"]
+- !private ["Ps9Equatable", "GET"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "JSONObjectWithData"]
 - !private ["Ps9Equatable", "MutableContainers"]
@@ -190,13 +220,16 @@ depends-member:
 - ["Ps9Equatable", "NSURLSession"]
 - ["Ps9Equatable", "NSURLSessionConfiguration"]
 - !private ["Ps9Equatable", "URLQueryAllowedCharacterSet"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "dataTaskWithURL"]
 - ["Ps9Equatable", "defaultSession"]
 - ["Ps9Equatable", "defaultSessionConfiguration"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "invalidResponseError"]
+- !private ["Ps9Equatable", "kAPIKey"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "resume"]
+- ["Ps9Equatable", "searchPhotosUsingAlamofireWithSearchText"]
 - ["Ps9Equatable", "searchPhotosWithSearchText"]
 - !private ["Ps9Equatable", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps9Equatable", "userInfo"]
@@ -207,6 +240,7 @@ depends-member:
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - ["V11FlickrSwift11FlickrPhoto", "deinit"]
 - !private ["V11FlickrSwift11FlickrPhoto", "init"]
+- !private ["C11FlickrSwift13FlickrRequest", "Alamofire"]
 - !private ["C11FlickrSwift13FlickrRequest", "AnyObject"]
 - ["C11FlickrSwift13FlickrRequest", "FlickrPhoto"]
 - ["C11FlickrSwift13FlickrRequest", "FlickrResponse"]
@@ -223,14 +257,18 @@ depends-member:
 - ["C11FlickrSwift13FlickrRequest", "deinit"]
 - ["C11FlickrSwift13FlickrRequest", "init"]
 - ["C11FlickrSwift13FlickrRequest", "invalidResponseError"]
+- !private ["C11FlickrSwift13FlickrRequest", "kAPIKey"]
 - !private ["C11FlickrSwift13FlickrRequest", "print"]
+- ["C11FlickrSwift13FlickrRequest", "searchPhotosUsingAlamofireWithSearchText"]
 - ["C11FlickrSwift13FlickrRequest", "searchPhotosWithSearchText"]
 - !private ["Sf", "deinit"]
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "Alamofire"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "FlickrPhoto"]
+- !private ["Ps8Hashable", "GET"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "JSONObjectWithData"]
 - !private ["Ps8Hashable", "NSCharacterSet"]
@@ -241,13 +279,16 @@ depends-member:
 - ["Ps8Hashable", "NSURLSession"]
 - ["Ps8Hashable", "NSURLSessionConfiguration"]
 - !private ["Ps8Hashable", "URLQueryAllowedCharacterSet"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "dataTaskWithURL"]
 - ["Ps8Hashable", "defaultSession"]
 - ["Ps8Hashable", "defaultSessionConfiguration"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "invalidResponseError"]
+- !private ["Ps8Hashable", "kAPIKey"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "resume"]
+- ["Ps8Hashable", "searchPhotosUsingAlamofireWithSearchText"]
 - ["Ps8Hashable", "searchPhotosWithSearchText"]
 - !private ["Ps8Hashable", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps8Hashable", "userInfo"]
@@ -276,6 +317,7 @@ depends-member:
 - !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["O9Alamofire6Method", "GET"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "init"]
@@ -314,6 +356,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "URLQueryAllowedCharacterSet"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "stringByAddingPercentEncodingWithAllowedCharacters"]
+- !private ["CSo8NSObject", "Alamofire"]
 - !private ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "FlickrPhoto"]
 - ["CSo8NSObject", "FlickrResponse"]
@@ -334,12 +377,15 @@ depends-member:
 - ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "invalidResponseError"]
+- !private ["CSo8NSObject", "kAPIKey"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "resume"]
+- ["CSo8NSObject", "searchPhotosUsingAlamofireWithSearchText"]
 - ["CSo8NSObject", "searchPhotosWithSearchText"]
 - !private ["CSo8NSObject", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["CSo8NSObject", "userInfo"]
 - ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "Alamofire"]
 - !private ["PSo16NSObjectProtocol", "FlickrPhoto"]
 - !private ["PSo16NSObjectProtocol", "JSONObjectWithData"]
 - !private ["PSo16NSObjectProtocol", "NSCharacterSet"]
@@ -355,8 +401,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "defaultSessionConfiguration"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "invalidResponseError"]
+- !private ["PSo16NSObjectProtocol", "kAPIKey"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "resume"]
+- ["PSo16NSObjectProtocol", "searchPhotosUsingAlamofireWithSearchText"]
 - ["PSo16NSObjectProtocol", "searchPhotosWithSearchText"]
 - !private ["PSo16NSObjectProtocol", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["PSo16NSObjectProtocol", "userInfo"]
@@ -372,6 +420,7 @@ depends-member:
 - ["CSo12NSURLSession", "init"]
 - ["CSo25NSURLSessionConfiguration", "defaultSessionConfiguration"]
 - !private ["CSo20NSURLSessionDataTask", "resume"]
+- !private ["CSo16NSURLSessionTask", "deinit"]
 - !private ["CSo16NSURLSessionTask", "resume"]
 - ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Ps13OptionSetType", "MutableContainers"]
@@ -386,7 +435,12 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["Ps30RangeReplaceableCollectionType", "_Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "map"]
+- !private ["Ps16RawRepresentable", "GET"]
 - !private ["Ps16RawRepresentable", "MutableContainers"]
+- !private ["C9Alamofire7Request", "responseJSON"]
+- !private ["V9Alamofire8Response", "result"]
+- !private ["O9Alamofire6Result", "isSuccess"]
+- !private ["O9Alamofire6Result", "value"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
@@ -421,6 +475,8 @@ depends-member:
 - !private ["Vs6UInt32", "deinit"]
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["P9Alamofire20URLStringConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
@@ -429,6 +485,7 @@ depends-member:
 - !private ["Ps10_ArrayType", "SubSequence"]
 - !private ["Ps10_ArrayType", "_Element"]
 - !private ["Ps10_ArrayType", "map"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
@@ -460,6 +517,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
 - ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "map"]
 - !private ["Ps21_ObjectiveCBridgeable", "stringByAddingPercentEncodingWithAllowedCharacters"]
@@ -475,6 +533,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "SubSequence"]
 - ["Ps12_Reflectable", "Value"]
 - !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "map"]
 - !private ["Ps12_Reflectable", "stringByAddingPercentEncodingWithAllowedCharacters"]
@@ -489,6 +548,8 @@ depends-nominal:
 - !private "Ps22BidirectionalIndexType"
 - !private "Ps21BitwiseOperationsType"
 - !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - "Ps11CVarArgType"
 - !private "Vs9Character"
 - "Ps14CollectionType"
@@ -518,6 +579,7 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
+- !private "O9Alamofire6Method"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
@@ -545,6 +607,9 @@ depends-nominal:
 - !private "Ps21RandomAccessIndexType"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
+- !private "C9Alamofire7Request"
+- !private "V9Alamofire8Response"
+- !private "O9Alamofire6Result"
 - "Ps12SequenceType"
 - !private "Ps14SetAlgebraType"
 - !private "Ps17SignedIntegerType"
@@ -560,9 +625,11 @@ depends-nominal:
 - !private "Vs6UInt32"
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
+- !private "P9Alamofire20URLStringConvertible"
 - !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
 - !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
 - !private "Ps32_BuiltinStringLiteralConvertible"
@@ -588,4 +655,25 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "ead104e46cef4866ecc8f205375448fb"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
+interface-hash: "066b3b17de28b8bb7db9cf44b873efab"

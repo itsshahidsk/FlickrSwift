@@ -1,0 +1,21 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "ab9663fd51a4af8ce16f126ffdae2f03"
+build_time: [514570562, 406689000]
+inputs:
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/Alamofire.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/Download.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/Error.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/Manager.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/MultipartFormData.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/Notifications.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/ParameterEncoding.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/Request.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/Response.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/ResponseSerialization.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/Result.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/ServerTrustPolicy.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/Stream.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/Timeline.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/Upload.swift": [514570560, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Alamofire/Source/Validation.swift": [514570560, 0]

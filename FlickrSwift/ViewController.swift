@@ -8,8 +8,11 @@
 
 import UIKit
 import SDWebImage
+import Alamofire
+
 
 let kTableViewCellIdentifier = "Cell"
+
 
 class ViewController: UIViewController {
     
@@ -41,7 +44,8 @@ extension ViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         if let searchText = searchBar.text where searchText.characters.count > 0 {
-            performSearchWithText(searchText)
+            //performSearchWithText(searchText)
+            performAlamofireSearchWithText(searchText)
         }
     }
     
@@ -102,6 +106,37 @@ extension ViewController {
             }
             
             })
+    }
+    
+    
+    func performAlamofireSearchWithText(searchText: String) {
+        
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        
+        //Making the search request
+        flickrRequest.searchPhotosUsingAlamofireWithSearchText(searchText, forPage: 1) { (error, photos) in
+            dispatch_async(dispatch_get_main_queue(), {
+                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+            })
+        
+            guard error == nil else{
+                print("Request failed")
+                return
+            }
+            
+            if let photos = photos where photos.count > 0 {
+                //print(photos)dogs
+                self.flickrPhotos =  photos.filter({ (photo) -> Bool in
+                    return photo.title.characters.count > 0
+                })
+                
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.tableview.reloadData()
+                })
+            }
+
+        }
+        
         
     }
 }

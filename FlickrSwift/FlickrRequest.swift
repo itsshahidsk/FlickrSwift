@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Alamofire
+
+let kAPIKey = "bb0743ec1df4ea2f3a99248d551e115e"
+
 
 class FlickrRequest: NSObject {
     
@@ -16,6 +20,9 @@ class FlickrRequest: NSObject {
     
     let defaultSession: NSURLSession = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
     
+    
+    
+    //MARK - Search Using NSURLSession
     func searchPhotosWithSearchText(searchText: String,forPage page:Int, andCompletionHandler completionHandler:FlickrResponse){
         
         let searchURLText = searchText.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
@@ -25,7 +32,7 @@ class FlickrRequest: NSObject {
             return
         }
         
-        let urlString = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=b3ecbf6e93be1a9ca7d0b2db228fda05&text=\(searchURLAllowedText)&per_page=30&page=\(page)&format=json&nojsoncallback=1"
+        let urlString = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(kAPIKey)&text=\(searchURLAllowedText)&per_page=30&page=\(page)&format=json&nojsoncallback=1"
         
         let validURL = NSURL(string: urlString)
         
@@ -71,7 +78,51 @@ class FlickrRequest: NSObject {
         }
         
         dataTask.resume()
+    }
+    
+    
+    func searchPhotosUsingAlamofireWithSearchText(searchText: String , forPage page: Int,andCompletionHandler completionHandler: FlickrResponse) {
         
+        guard  let searchURLAllowedString = searchText.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet()) else {
+            print("Invalid URL Text")
+            completionHandler(error:invalidResponseError , photos: nil)
+            return
+        }
+        
+        let urlString = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(kAPIKey)&text=\(searchURLAllowedString)&per_page=30&page=\(page)&format=json&nojsoncallback=1"
+
+        guard let validURL = NSURL(string: urlString) else {
+            print("Invalid url string")
+            return
+        }
+        
+        Alamofire.request(.GET, validURL).responseJSON { (response) in
+            
+            guard response.result.isSuccess else {
+                completionHandler(error: self.invalidResponseError, photos:nil)
+                return
+            }
+            
+            guard let responseDictionary = response.result.value , photosObject = responseDictionary["photos"] , photosArray = photosObject!["photo"] else {
+                completionHandler(error: self.invalidResponseError, photos: nil)
+                return
+            }
+            
+            guard let photos = photosArray as? [AnyObject] else {
+                completionHandler(error: self.invalidResponseError, photos: nil)
+                return
+            }
+            
+            let downloadedFlickrPhotos:[FlickrPhoto] = photos.map({ (photo) -> FlickrPhoto in
+                let farm = photo["farm"] as? Int ?? 0
+                let photoId = photo["id"] as? String ?? ""
+                let secret = photo["secret"] as? String ?? ""
+                let server = photo["server"] as? String ?? ""
+                let title = photo["title"] as? String ?? ""
+                return FlickrPhoto(photoId:photoId ,farm:farm,secret:secret ,server: server,title: title)
+            })
+            completionHandler(error: nil,photos: downloadedFlickrPhotos)
+        }
         
     }
     
