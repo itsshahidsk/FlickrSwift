@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C11FlickrSwift11AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
 - "applicationWillEnterForeground"
-- "applicationDidEnterBackground"
+- "applicationDidBecomeActive"
+- "applicationWillTerminate"
 - "application"
 - "applicationWillResignActive"
-- "applicationWillTerminate"
-- "applicationDidBecomeActive"
+- "window"
+- "applicationDidEnterBackground"
 depends-top-level:
-- "UIResponder"
-- "UIApplicationDelegate"
-- "Bool"
-- "AnyObject"
 - "UIApplication"
-- !private "BooleanLiteralType"
-- "UIWindow"
+- "AnyObject"
+- "UIApplicationDelegate"
 - "AppDelegate"
+- "UIWindow"
+- "Bool"
 - "NSObject"
+- !private "BooleanLiteralType"
+- "UIResponder"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]

@@ -7,28 +7,28 @@ provides-nominal:
 provides-member:
 - ["C11FlickrSwift13FlickrRequest", ""]
 provides-dynamic-lookup:
-- "invalidResponseError"
 - "defaultSession"
+- "invalidResponseError"
 depends-top-level:
+- !private "NSCharacterSet"
+- "String"
+- !private "Alamofire"
+- !private "print"
+- "NSURLSession"
+- "FlickrRequest"
+- "NSObject"
+- "kAPIKey"
 - !private "AnyObject"
 - !private "NSJSONSerialization"
-- "NSObject"
-- "NSError"
-- !private "print"
 - "FlickrPhoto"
+- "NSURLSessionConfiguration"
+- !private "NSJSONReadingOptions"
+- !private "NSURL"
 - "Dictionary"
 - "Int"
-- !private "NSURL"
-- !private "Alamofire"
-- "String"
-- "FlickrRequest"
-- !private "??"
-- "NSURLSession"
-- "NSURLSessionConfiguration"
-- !private "NSCharacterSet"
+- "NSError"
 - "StringLiteralType"
-- !private "NSJSONReadingOptions"
-- "kAPIKey"
+- !private "??"
 depends-member:
 - !private ["Ps9AnyObject", "Alamofire"]
 - !private ["Ps9AnyObject", "FlickrPhoto"]

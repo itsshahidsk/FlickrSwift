@@ -55,7 +55,7 @@
 		F74CBBE11CC6F10E00C97095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F74CBBED1CC7012A00C97095 /* FlickrRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrRequest.swift; sourceTree = "<group>"; };
 		F7F14AC51CC85AF800C8AAFB /* FlickrPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrPhoto.swift; sourceTree = "<group>"; };
-		F7F14AC71CC93DE900C8AAFB /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
+		F7F14AC71CC93DE900C8AAFB /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.MD; path = FlickrSwift/README.MD; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +104,7 @@
 		F74CBBB31CC6F10D00C97095 = {
 			isa = PBXGroup;
 			children = (
+				F7F14AC71CC93DE900C8AAFB /* README.MD */,
 				F74CBBBE1CC6F10E00C97095 /* FlickrSwift */,
 				F74CBBD31CC6F10E00C97095 /* FlickrSwiftTests */,
 				F74CBBDE1CC6F10E00C97095 /* FlickrSwiftUITests */,
@@ -134,7 +135,6 @@
 				F74CBBC81CC6F10E00C97095 /* LaunchScreen.storyboard */,
 				F74CBBCB1CC6F10E00C97095 /* Info.plist */,
 				F74CBBED1CC7012A00C97095 /* FlickrRequest.swift */,
-				F7F14AC71CC93DE900C8AAFB /* README.MD */,
 			);
 			path = FlickrSwift;
 			sourceTree = "<group>";
