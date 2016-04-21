@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 let kTableViewCellIdentifier = "Cell"
 
@@ -57,8 +58,7 @@ extension ViewController: UITableViewDataSource {
         let cell = tableview.dequeueReusableCellWithIdentifier(kTableViewCellIdentifier)
         let flickrPhoto = flickrPhotos[indexPath.row]
         cell?.textLabel?.text = flickrPhoto.title
-     //   cell?.imageView?.sd_setImageWithURL(flickrPhoto.photoUrl)
-        
+        cell?.imageView?.sd_setImageWithURL(flickrPhoto.photoUrl)
         return cell!
     }
     
