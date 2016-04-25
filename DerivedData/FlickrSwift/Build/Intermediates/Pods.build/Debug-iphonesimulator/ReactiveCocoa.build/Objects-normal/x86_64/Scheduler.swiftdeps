@@ -1,0 +1,908 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SchedulerType"
+- "DateSchedulerType"
+- "ImmediateScheduler"
+- "UIScheduler"
+- "QueueScheduler"
+- "TestScheduler"
+provides-nominal:
+- "P13ReactiveCocoa13SchedulerType"
+- "P13ReactiveCocoa17DateSchedulerType"
+- "C13ReactiveCocoa18ImmediateScheduler"
+- "C13ReactiveCocoa11UIScheduler"
+- "C13ReactiveCocoa14QueueScheduler"
+- "C13ReactiveCocoa13TestScheduler"
+- "CC13ReactiveCocoa13TestSchedulerP33_7EEF7EE1C7538B891C4A55EF7C5773D515ScheduledAction"
+provides-member:
+- ["P13ReactiveCocoa13SchedulerType", ""]
+- ["P13ReactiveCocoa17DateSchedulerType", ""]
+- ["C13ReactiveCocoa18ImmediateScheduler", ""]
+- ["C13ReactiveCocoa11UIScheduler", ""]
+- ["C13ReactiveCocoa14QueueScheduler", ""]
+- ["C13ReactiveCocoa13TestScheduler", ""]
+- ["CC13ReactiveCocoa13TestSchedulerP33_7EEF7EE1C7538B891C4A55EF7C5773D515ScheduledAction", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "dispatch_after"
+- !private "dispatch_source_set_event_handler"
+- !private "!="
+- "dispatch_queue_t"
+- !private "&&"
+- !private "Int"
+- !private "!"
+- "Int32"
+- "NSDate"
+- "String"
+- !private "=="
+- !private "modf"
+- !private "assert"
+- !private "dispatch_walltime"
+- !private "dispatch_queue_create"
+- !private "SimpleDisposable"
+- !private ">"
+- !private "OSAtomicIncrement32"
+- !private "dispatch_resume"
+- !private "QOS_CLASS_DEFAULT"
+- !private "DISPATCH_QUEUE_SERIAL"
+- !private "precondition"
+- "Disposable"
+- "dispatch_qos_class_t"
+- !private "Double"
+- !private "Bool"
+- !private "OSAtomicDecrement32"
+- !private "SerialDisposable"
+- "QueueScheduler"
+- "ImmediateScheduler"
+- !private "*"
+- "NSTimeInterval"
+- !private "dispatch_source_cancel"
+- !private "NSEC_PER_SEC"
+- "StringLiteralType"
+- !private "DBL_EPSILON"
+- !private "dispatch_source_create"
+- !private "!=="
+- !private ">="
+- "SchedulerType"
+- !private "DISPATCH_SOURCE_TYPE_TIMER"
+- "NSRecursiveLock"
+- !private "UInt64"
+- !private "dispatch_set_target_queue"
+- !private "dispatch_queue_attr_make_with_qos_class"
+- "TestScheduler"
+- !private "ActionDisposable"
+- "UIScheduler"
+- "DateSchedulerType"
+- !private "NSThread"
+- !private "timespec"
+- !private "dispatch_time_t"
+- !private "dispatch_async"
+- !private "dispatch_source_set_timer"
+- "dispatch_get_main_queue"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["C13ReactiveCocoa16ActionDisposable", "deinit"]
+- !private ["C13ReactiveCocoa16ActionDisposable", "init"]
+- !private ["Ps9AnyObject", "ActionDisposable"]
+- !private ["Ps9AnyObject", "DBL_EPSILON"]
+- !private ["Ps9AnyObject", "DISPATCH_QUEUE_SERIAL"]
+- !private ["Ps9AnyObject", "DISPATCH_SOURCE_TYPE_TIMER"]
+- !private ["Ps9AnyObject", "Double"]
+- !private ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "NSDate"]
+- !private ["Ps9AnyObject", "NSEC_PER_SEC"]
+- ["Ps9AnyObject", "NSRecursiveLock"]
+- !private ["Ps9AnyObject", "NSThread"]
+- !private ["Ps9AnyObject", "OSAtomicDecrement32"]
+- !private ["Ps9AnyObject", "OSAtomicIncrement32"]
+- !private ["Ps9AnyObject", "QOS_CLASS_DEFAULT"]
+- ["Ps9AnyObject", "QueueScheduler"]
+- !private ["Ps9AnyObject", "ScheduledAction"]
+- !private ["Ps9AnyObject", "SerialDisposable"]
+- !private ["Ps9AnyObject", "SimpleDisposable"]
+- !private ["Ps9AnyObject", "UInt64"]
+- !private ["Ps9AnyObject", "_currentDate"]
+- !private ["Ps9AnyObject", "action"]
+- !private ["Ps9AnyObject", "advanceByInterval"]
+- !private ["Ps9AnyObject", "advanceToDate"]
+- !private ["Ps9AnyObject", "assert"]
+- !private ["Ps9AnyObject", "compare"]
+- ["Ps9AnyObject", "currentDate"]
+- !private ["Ps9AnyObject", "date"]
+- !private ["Ps9AnyObject", "dateByAddingTimeInterval"]
+- !private ["Ps9AnyObject", "dispatch_after"]
+- !private ["Ps9AnyObject", "dispatch_async"]
+- ["Ps9AnyObject", "dispatch_get_main_queue"]
+- !private ["Ps9AnyObject", "dispatch_queue_attr_make_with_qos_class"]
+- !private ["Ps9AnyObject", "dispatch_queue_create"]
+- !private ["Ps9AnyObject", "dispatch_resume"]
+- !private ["Ps9AnyObject", "dispatch_set_target_queue"]
+- !private ["Ps9AnyObject", "dispatch_source_cancel"]
+- !private ["Ps9AnyObject", "dispatch_source_create"]
+- !private ["Ps9AnyObject", "dispatch_source_set_event_handler"]
+- !private ["Ps9AnyObject", "dispatch_source_set_timer"]
+- !private ["Ps9AnyObject", "dispatch_walltime"]
+- !private ["Ps9AnyObject", "disposed"]
+- !private ["Ps9AnyObject", "distantFuture"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "innerDisposable"]
+- !private ["Ps9AnyObject", "isMainThread"]
+- !private ["Ps9AnyObject", "less"]
+- !private ["Ps9AnyObject", "lock"]
+- !private ["Ps9AnyObject", "modf"]
+- !private ["Ps9AnyObject", "name"]
+- !private ["Ps9AnyObject", "precondition"]
+- !private ["Ps9AnyObject", "queue"]
+- !private ["Ps9AnyObject", "queueLength"]
+- ["Ps9AnyObject", "schedule"]
+- ["Ps9AnyObject", "scheduleAfter"]
+- !private ["Ps9AnyObject", "scheduledActions"]
+- !private ["Ps9AnyObject", "timeIntervalSince1970"]
+- !private ["Ps9AnyObject", "timespec"]
+- !private ["Ps9AnyObject", "unlock"]
+- !private ["Ps9AnyObject", "wallTimeWithDate"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "filter"]
+- !private ["Sa", "removeAtIndex"]
+- !private ["Sa", "sortInPlace"]
+- !private ["Sa", "subscript"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "append"]
+- !private ["Ps23ArrayLiteralConvertible", "count"]
+- !private ["Ps23ArrayLiteralConvertible", "filter"]
+- !private ["Ps23ArrayLiteralConvertible", "removeAtIndex"]
+- !private ["Ps23ArrayLiteralConvertible", "sortInPlace"]
+- !private ["Ps23ArrayLiteralConvertible", "subscript"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["Vs10ArraySlice", "SubSequence"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "Stride"]
+- !private ["Ps22BidirectionalIndexType", "init"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "Stride"]
+- !private ["Ps21BitwiseOperationsType", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "Stride"]
+- !private ["Ps11CVarArgType", "compare"]
+- !private ["Ps11CVarArgType", "dateByAddingTimeInterval"]
+- !private ["Ps11CVarArgType", "distantFuture"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "isMainThread"]
+- !private ["Ps11CVarArgType", "lock"]
+- !private ["Ps11CVarArgType", "name"]
+- !private ["Ps11CVarArgType", "timeIntervalSince1970"]
+- !private ["Ps11CVarArgType", "unlock"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "append"]
+- !private ["Ps14CollectionType", "count"]
+- !private ["Ps14CollectionType", "filter"]
+- !private ["Ps14CollectionType", "removeAtIndex"]
+- !private ["Ps14CollectionType", "sortInPlace"]
+- !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "compare"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "dateByAddingTimeInterval"]
+- !private ["Ps28CustomDebugStringConvertible", "distantFuture"]
+- !private ["Ps28CustomDebugStringConvertible", "filter"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isMainThread"]
+- !private ["Ps28CustomDebugStringConvertible", "lock"]
+- !private ["Ps28CustomDebugStringConvertible", "name"]
+- !private ["Ps28CustomDebugStringConvertible", "removeAtIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "sortInPlace"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "timeIntervalSince1970"]
+- !private ["Ps28CustomDebugStringConvertible", "unlock"]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "compare"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "dateByAddingTimeInterval"]
+- !private ["Ps23CustomStringConvertible", "distantFuture"]
+- !private ["Ps23CustomStringConvertible", "filter"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isMainThread"]
+- !private ["Ps23CustomStringConvertible", "lock"]
+- !private ["Ps23CustomStringConvertible", "name"]
+- !private ["Ps23CustomStringConvertible", "removeAtIndex"]
+- !private ["Ps23CustomStringConvertible", "sortInPlace"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "timeIntervalSince1970"]
+- !private ["Ps23CustomStringConvertible", "unlock"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "ActionDisposable"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "DBL_EPSILON"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "DISPATCH_QUEUE_SERIAL"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "DISPATCH_SOURCE_TYPE_TIMER"]
+- ["P13ReactiveCocoa17DateSchedulerType", "Disposable"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "Double"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "Int"]
+- ["P13ReactiveCocoa17DateSchedulerType", "NSDate"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "NSEC_PER_SEC"]
+- ["P13ReactiveCocoa17DateSchedulerType", "NSRecursiveLock"]
+- ["P13ReactiveCocoa17DateSchedulerType", "NSTimeInterval"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "QOS_CLASS_DEFAULT"]
+- ["P13ReactiveCocoa17DateSchedulerType", "QueueScheduler"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "ScheduledAction"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "SerialDisposable"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "SimpleDisposable"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "UInt64"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "_currentDate"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "advanceByInterval"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "advanceToDate"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "assert"]
+- ["P13ReactiveCocoa17DateSchedulerType", "currentDate"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "dispatch_after"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "dispatch_async"]
+- ["P13ReactiveCocoa17DateSchedulerType", "dispatch_get_main_queue"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "dispatch_queue_attr_make_with_qos_class"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "dispatch_queue_create"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "dispatch_resume"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "dispatch_set_target_queue"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "dispatch_source_cancel"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "dispatch_source_create"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "dispatch_source_set_event_handler"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "dispatch_source_set_timer"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "dispatch_walltime"]
+- ["P13ReactiveCocoa17DateSchedulerType", "init"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "lock"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "modf"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "precondition"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "queue"]
+- ["P13ReactiveCocoa17DateSchedulerType", "schedule"]
+- ["P13ReactiveCocoa17DateSchedulerType", "scheduleAfter"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "scheduledActions"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "timespec"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "wallTimeWithDate"]
+- ["P13ReactiveCocoa17DateSchedulerType", ""]
+- !private ["P13ReactiveCocoa10Disposable", "disposed"]
+- !private ["P13ReactiveCocoa10Disposable", "init"]
+- !private ["P13ReactiveCocoa10Disposable", "innerDisposable"]
+- !private ["Sd", "init"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "OrderedAscending"]
+- !private ["Ps9Equatable", "OrderedDescending"]
+- !private ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "compare"]
+- !private ["Ps9Equatable", "dateByAddingTimeInterval"]
+- !private ["Ps9Equatable", "distantFuture"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isMainThread"]
+- !private ["Ps9Equatable", "lock"]
+- !private ["Ps9Equatable", "name"]
+- !private ["Ps9Equatable", "timeIntervalSince1970"]
+- !private ["Ps9Equatable", "unlock"]
+- !private ["Ps23FloatLiteralConvertible", "init"]
+- !private ["Ps17FloatingPointType", "init"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "Stride"]
+- !private ["Ps16ForwardIndexType", "init"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "OrderedAscending"]
+- !private ["Ps8Hashable", "OrderedDescending"]
+- !private ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "compare"]
+- !private ["Ps8Hashable", "dateByAddingTimeInterval"]
+- !private ["Ps8Hashable", "distantFuture"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isMainThread"]
+- !private ["Ps8Hashable", "lock"]
+- !private ["Ps8Hashable", "name"]
+- !private ["Ps8Hashable", "timeIntervalSince1970"]
+- !private ["Ps8Hashable", "unlock"]
+- ["C13ReactiveCocoa18ImmediateScheduler", "Disposable"]
+- ["C13ReactiveCocoa18ImmediateScheduler", "deinit"]
+- ["C13ReactiveCocoa18ImmediateScheduler", "init"]
+- ["C13ReactiveCocoa18ImmediateScheduler", "schedule"]
+- ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "count"]
+- !private ["Ps9Indexable", "filter"]
+- !private ["Ps9Indexable", "removeAtIndex"]
+- !private ["Ps9Indexable", "sortInPlace"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
+- !private ["Si", "init"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "Stride"]
+- !private ["Ps21IntegerArithmeticType", "init"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Stride"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Stride"]
+- !private ["Ps11IntegerType", "init"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "Stride"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "append"]
+- !private ["Ps21MutableCollectionType", "count"]
+- !private ["Ps21MutableCollectionType", "filter"]
+- !private ["Ps21MutableCollectionType", "removeAtIndex"]
+- !private ["Ps21MutableCollectionType", "sortInPlace"]
+- !private ["Ps21MutableCollectionType", "subscript"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "count"]
+- !private ["Ps16MutableIndexable", "filter"]
+- !private ["Ps16MutableIndexable", "removeAtIndex"]
+- !private ["Ps16MutableIndexable", "sortInPlace"]
+- !private ["Ps16MutableIndexable", "subscript"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "append"]
+- !private ["Ps16MutableSliceable", "count"]
+- !private ["Ps16MutableSliceable", "filter"]
+- !private ["Ps16MutableSliceable", "removeAtIndex"]
+- !private ["Ps16MutableSliceable", "sortInPlace"]
+- !private ["Ps16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "compare"]
+- !private ["PSo8NSCoding", "dateByAddingTimeInterval"]
+- !private ["PSo8NSCoding", "distantFuture"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "timeIntervalSince1970"]
+- !private ["OSC18NSComparisonResult", "OrderedAscending"]
+- !private ["OSC18NSComparisonResult", "OrderedDescending"]
+- !private ["OSC18NSComparisonResult", "RawValue"]
+- !private ["OSC18NSComparisonResult", "deinit"]
+- !private ["PSo9NSCopying", "compare"]
+- !private ["PSo9NSCopying", "dateByAddingTimeInterval"]
+- !private ["PSo9NSCopying", "distantFuture"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "timeIntervalSince1970"]
+- !private ["CSo6NSDate", "compare"]
+- !private ["CSo6NSDate", "dateByAddingTimeInterval"]
+- !private ["CSo6NSDate", "distantFuture"]
+- !private ["CSo6NSDate", "init"]
+- !private ["CSo6NSDate", "timeIntervalSince1970"]
+- ["PSo9NSLocking", "init"]
+- !private ["PSo9NSLocking", "lock"]
+- !private ["PSo9NSLocking", "name"]
+- !private ["PSo9NSLocking", "unlock"]
+- !private ["CSo8NSObject", "compare"]
+- !private ["CSo8NSObject", "dateByAddingTimeInterval"]
+- !private ["CSo8NSObject", "distantFuture"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isMainThread"]
+- !private ["CSo8NSObject", "lock"]
+- !private ["CSo8NSObject", "name"]
+- !private ["CSo8NSObject", "timeIntervalSince1970"]
+- !private ["CSo8NSObject", "unlock"]
+- !private ["PSo16NSObjectProtocol", "compare"]
+- !private ["PSo16NSObjectProtocol", "dateByAddingTimeInterval"]
+- !private ["PSo16NSObjectProtocol", "distantFuture"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isMainThread"]
+- !private ["PSo16NSObjectProtocol", "lock"]
+- !private ["PSo16NSObjectProtocol", "name"]
+- !private ["PSo16NSObjectProtocol", "timeIntervalSince1970"]
+- !private ["PSo16NSObjectProtocol", "unlock"]
+- ["CSo15NSRecursiveLock", "init"]
+- !private ["CSo15NSRecursiveLock", "lock"]
+- !private ["CSo15NSRecursiveLock", "name"]
+- !private ["CSo15NSRecursiveLock", "unlock"]
+- !private ["PSo14NSSecureCoding", "compare"]
+- !private ["PSo14NSSecureCoding", "dateByAddingTimeInterval"]
+- !private ["PSo14NSSecureCoding", "distantFuture"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "timeIntervalSince1970"]
+- !private ["CSo8NSThread", "isMainThread"]
+- !private ["Sq", "deinit"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "ActionDisposable"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "DISPATCH_QUEUE_SERIAL"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "DISPATCH_SOURCE_TYPE_TIMER"]
+- ["C13ReactiveCocoa14QueueScheduler", "Disposable"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "Double"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "Int"]
+- ["C13ReactiveCocoa14QueueScheduler", "NSDate"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "NSEC_PER_SEC"]
+- ["C13ReactiveCocoa14QueueScheduler", "NSTimeInterval"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "QOS_CLASS_DEFAULT"]
+- ["C13ReactiveCocoa14QueueScheduler", "QueueScheduler"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "SimpleDisposable"]
+- ["C13ReactiveCocoa14QueueScheduler", "String"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "UInt64"]
+- ["C13ReactiveCocoa14QueueScheduler", "currentDate"]
+- ["C13ReactiveCocoa14QueueScheduler", "deinit"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "dispatch_after"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "dispatch_async"]
+- ["C13ReactiveCocoa14QueueScheduler", "dispatch_get_main_queue"]
+- ["C13ReactiveCocoa14QueueScheduler", "dispatch_qos_class_t"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "dispatch_queue_attr_make_with_qos_class"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "dispatch_queue_create"]
+- ["C13ReactiveCocoa14QueueScheduler", "dispatch_queue_t"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "dispatch_resume"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "dispatch_set_target_queue"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "dispatch_source_cancel"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "dispatch_source_create"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "dispatch_source_set_event_handler"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "dispatch_source_set_timer"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "dispatch_time_t"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "dispatch_walltime"]
+- ["C13ReactiveCocoa14QueueScheduler", "init"]
+- ["C13ReactiveCocoa14QueueScheduler", "mainQueueScheduler"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "modf"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "precondition"]
+- ["C13ReactiveCocoa14QueueScheduler", "queue"]
+- ["C13ReactiveCocoa14QueueScheduler", "schedule"]
+- ["C13ReactiveCocoa14QueueScheduler", "scheduleAfter"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "timespec"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "wallTimeWithDate"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "Stride"]
+- !private ["Ps21RandomAccessIndexType", "init"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "append"]
+- !private ["Ps30RangeReplaceableCollectionType", "count"]
+- !private ["Ps30RangeReplaceableCollectionType", "filter"]
+- !private ["Ps30RangeReplaceableCollectionType", "removeAtIndex"]
+- !private ["Ps30RangeReplaceableCollectionType", "sortInPlace"]
+- !private ["Ps30RangeReplaceableCollectionType", "subscript"]
+- !private ["Ps16RawRepresentable", "OrderedAscending"]
+- !private ["Ps16RawRepresentable", "OrderedDescending"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- !private ["P13ReactiveCocoa13SchedulerType", "ActionDisposable"]
+- !private ["P13ReactiveCocoa13SchedulerType", "DBL_EPSILON"]
+- !private ["P13ReactiveCocoa13SchedulerType", "DISPATCH_QUEUE_SERIAL"]
+- !private ["P13ReactiveCocoa13SchedulerType", "DISPATCH_SOURCE_TYPE_TIMER"]
+- ["P13ReactiveCocoa13SchedulerType", "Disposable"]
+- !private ["P13ReactiveCocoa13SchedulerType", "Double"]
+- !private ["P13ReactiveCocoa13SchedulerType", "Int"]
+- ["P13ReactiveCocoa13SchedulerType", "NSDate"]
+- !private ["P13ReactiveCocoa13SchedulerType", "NSEC_PER_SEC"]
+- ["P13ReactiveCocoa13SchedulerType", "NSRecursiveLock"]
+- !private ["P13ReactiveCocoa13SchedulerType", "NSThread"]
+- ["P13ReactiveCocoa13SchedulerType", "NSTimeInterval"]
+- !private ["P13ReactiveCocoa13SchedulerType", "OSAtomicDecrement32"]
+- !private ["P13ReactiveCocoa13SchedulerType", "OSAtomicIncrement32"]
+- !private ["P13ReactiveCocoa13SchedulerType", "QOS_CLASS_DEFAULT"]
+- ["P13ReactiveCocoa13SchedulerType", "QueueScheduler"]
+- !private ["P13ReactiveCocoa13SchedulerType", "ScheduledAction"]
+- !private ["P13ReactiveCocoa13SchedulerType", "SerialDisposable"]
+- !private ["P13ReactiveCocoa13SchedulerType", "SimpleDisposable"]
+- !private ["P13ReactiveCocoa13SchedulerType", "UInt64"]
+- !private ["P13ReactiveCocoa13SchedulerType", "_currentDate"]
+- !private ["P13ReactiveCocoa13SchedulerType", "advanceByInterval"]
+- !private ["P13ReactiveCocoa13SchedulerType", "advanceToDate"]
+- !private ["P13ReactiveCocoa13SchedulerType", "assert"]
+- ["P13ReactiveCocoa13SchedulerType", "currentDate"]
+- !private ["P13ReactiveCocoa13SchedulerType", "dispatch_after"]
+- !private ["P13ReactiveCocoa13SchedulerType", "dispatch_async"]
+- ["P13ReactiveCocoa13SchedulerType", "dispatch_get_main_queue"]
+- !private ["P13ReactiveCocoa13SchedulerType", "dispatch_queue_attr_make_with_qos_class"]
+- !private ["P13ReactiveCocoa13SchedulerType", "dispatch_queue_create"]
+- !private ["P13ReactiveCocoa13SchedulerType", "dispatch_resume"]
+- !private ["P13ReactiveCocoa13SchedulerType", "dispatch_set_target_queue"]
+- !private ["P13ReactiveCocoa13SchedulerType", "dispatch_source_cancel"]
+- !private ["P13ReactiveCocoa13SchedulerType", "dispatch_source_create"]
+- !private ["P13ReactiveCocoa13SchedulerType", "dispatch_source_set_event_handler"]
+- !private ["P13ReactiveCocoa13SchedulerType", "dispatch_source_set_timer"]
+- !private ["P13ReactiveCocoa13SchedulerType", "dispatch_walltime"]
+- ["P13ReactiveCocoa13SchedulerType", "init"]
+- !private ["P13ReactiveCocoa13SchedulerType", "lock"]
+- !private ["P13ReactiveCocoa13SchedulerType", "modf"]
+- !private ["P13ReactiveCocoa13SchedulerType", "precondition"]
+- !private ["P13ReactiveCocoa13SchedulerType", "queue"]
+- !private ["P13ReactiveCocoa13SchedulerType", "queueLength"]
+- ["P13ReactiveCocoa13SchedulerType", "schedule"]
+- ["P13ReactiveCocoa13SchedulerType", "scheduleAfter"]
+- !private ["P13ReactiveCocoa13SchedulerType", "scheduledActions"]
+- !private ["P13ReactiveCocoa13SchedulerType", "timespec"]
+- !private ["P13ReactiveCocoa13SchedulerType", "wallTimeWithDate"]
+- ["P13ReactiveCocoa13SchedulerType", ""]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "append"]
+- !private ["Ps12SequenceType", "count"]
+- !private ["Ps12SequenceType", "filter"]
+- !private ["Ps12SequenceType", "removeAtIndex"]
+- !private ["Ps12SequenceType", "sortInPlace"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["C13ReactiveCocoa16SerialDisposable", "deinit"]
+- !private ["C13ReactiveCocoa16SerialDisposable", "init"]
+- !private ["C13ReactiveCocoa16SerialDisposable", "innerDisposable"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "Stride"]
+- !private ["Ps17SignedIntegerType", "init"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Stride"]
+- !private ["Ps16SignedNumberType", "init"]
+- !private ["C13ReactiveCocoa16SimpleDisposable", "deinit"]
+- !private ["C13ReactiveCocoa16SimpleDisposable", "disposed"]
+- !private ["C13ReactiveCocoa16SimpleDisposable", "init"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Vs12StaticString", "deinit"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "init"]
+- !private ["C13ReactiveCocoa13TestScheduler", "ActionDisposable"]
+- !private ["C13ReactiveCocoa13TestScheduler", "Bool"]
+- !private ["C13ReactiveCocoa13TestScheduler", "DBL_EPSILON"]
+- ["C13ReactiveCocoa13TestScheduler", "Disposable"]
+- ["C13ReactiveCocoa13TestScheduler", "NSDate"]
+- ["C13ReactiveCocoa13TestScheduler", "NSRecursiveLock"]
+- ["C13ReactiveCocoa13TestScheduler", "NSTimeInterval"]
+- ["C13ReactiveCocoa13TestScheduler", "ScheduledAction"]
+- !private ["C13ReactiveCocoa13TestScheduler", "SerialDisposable"]
+- !private ["C13ReactiveCocoa13TestScheduler", "_currentDate"]
+- ["C13ReactiveCocoa13TestScheduler", "advance"]
+- ["C13ReactiveCocoa13TestScheduler", "advanceByInterval"]
+- ["C13ReactiveCocoa13TestScheduler", "advanceToDate"]
+- !private ["C13ReactiveCocoa13TestScheduler", "assert"]
+- ["C13ReactiveCocoa13TestScheduler", "currentDate"]
+- ["C13ReactiveCocoa13TestScheduler", "deinit"]
+- ["C13ReactiveCocoa13TestScheduler", "init"]
+- !private ["C13ReactiveCocoa13TestScheduler", "lock"]
+- !private ["C13ReactiveCocoa13TestScheduler", "precondition"]
+- ["C13ReactiveCocoa13TestScheduler", "run"]
+- ["C13ReactiveCocoa13TestScheduler", "schedule"]
+- ["C13ReactiveCocoa13TestScheduler", "scheduleAfter"]
+- !private ["C13ReactiveCocoa13TestScheduler", "scheduledActions"]
+- ["C13ReactiveCocoa11UIScheduler", "Disposable"]
+- ["C13ReactiveCocoa11UIScheduler", "Int32"]
+- !private ["C13ReactiveCocoa11UIScheduler", "NSThread"]
+- !private ["C13ReactiveCocoa11UIScheduler", "OSAtomicDecrement32"]
+- !private ["C13ReactiveCocoa11UIScheduler", "OSAtomicIncrement32"]
+- !private ["C13ReactiveCocoa11UIScheduler", "SimpleDisposable"]
+- ["C13ReactiveCocoa11UIScheduler", "deinit"]
+- !private ["C13ReactiveCocoa11UIScheduler", "dispatch_async"]
+- !private ["C13ReactiveCocoa11UIScheduler", "dispatch_get_main_queue"]
+- ["C13ReactiveCocoa11UIScheduler", "init"]
+- !private ["C13ReactiveCocoa11UIScheduler", "queueLength"]
+- ["C13ReactiveCocoa11UIScheduler", "schedule"]
+- !private ["Vs6UInt64", "init"]
+- !private ["Ps19UnsignedIntegerType", "init"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "append"]
+- !private ["Ps10_ArrayType", "count"]
+- !private ["Ps10_ArrayType", "filter"]
+- !private ["Ps10_ArrayType", "removeAtIndex"]
+- !private ["Ps10_ArrayType", "sortInPlace"]
+- !private ["Ps10_ArrayType", "subscript"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps31_BuiltinFloatLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Stride"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["Ps19_CVarArgAlignedType", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_DestructorSafeContainer", "filter"]
+- !private ["Ps24_DestructorSafeContainer", "removeAtIndex"]
+- !private ["Ps24_DestructorSafeContainer", "sortInPlace"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Stride"]
+- !private ["Ps22_IntegerArithmeticType", "init"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Stride"]
+- !private ["Ps12_IntegerType", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "filter"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "removeAtIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "sortInPlace"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "Stride"]
+- !private ["Ps22_RandomAccessAmbiguity", "init"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Stride"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "append"]
+- !private ["Ps12_Reflectable", "compare"]
+- !private ["Ps12_Reflectable", "count"]
+- !private ["Ps12_Reflectable", "dateByAddingTimeInterval"]
+- !private ["Ps12_Reflectable", "distantFuture"]
+- !private ["Ps12_Reflectable", "filter"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "removeAtIndex"]
+- !private ["Ps12_Reflectable", "sortInPlace"]
+- !private ["Ps12_Reflectable", "subscript"]
+- !private ["Ps12_Reflectable", "timeIntervalSince1970"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "Stride"]
+- !private ["Ps18_SignedIntegerType", "init"]
+- !private ["VSC8timespec", "init"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- !private "C13ReactiveCocoa16ActionDisposable"
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "P13ReactiveCocoa17DateSchedulerType"
+- !private "P13ReactiveCocoa10Disposable"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps23FloatLiteralConvertible"
+- !private "Ps17FloatingPointType"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- "C13ReactiveCocoa18ImmediateScheduler"
+- "SQ"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "OSC18NSComparisonResult"
+- !private "PSo9NSCopying"
+- !private "CSo6NSDate"
+- "PSo9NSLocking"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "CSo15NSRecursiveLock"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSThread"
+- !private "Sq"
+- "C13ReactiveCocoa14QueueScheduler"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
+- "P13ReactiveCocoa13SchedulerType"
+- !private "Ps12SequenceType"
+- !private "C13ReactiveCocoa16SerialDisposable"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "C13ReactiveCocoa16SimpleDisposable"
+- !private "Vs5Slice"
+- !private "Vs12StaticString"
+- !private "Ps10Strideable"
+- "C13ReactiveCocoa13TestScheduler"
+- "C13ReactiveCocoa11UIScheduler"
+- !private "Vs6UInt64"
+- !private "Ps19UnsignedIntegerType"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps31_BuiltinFloatLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps19_CVarArgAlignedType"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+- !private "VSC8timespec"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACObjCRuntime.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIControl+RACSignalSupportPrivate.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UISwitch+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UISlider+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIRefreshControl+RACCommandSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIImagePickerController+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/MKAnnotationView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIActionSheet+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIAlertView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIBarButtonItem+RACCommandSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIDatePicker+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIStepper+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UITextView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UITextField+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UITableViewHeaderFooterView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UITableViewCell+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UISegmentedControl+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIGestureRecognizer+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIControl+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UICollectionReusableView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIButton+RACCommandSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/ReactiveCocoa.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/ReactiveCocoa-Bridging-Header.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACValueTransformer.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACUnit.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACUnarySequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACTupleSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACTuple.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACTestScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACTargetQueueScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSubscriptionScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSubscriptingAssignmentTrampoline.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACStringSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSignalSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSignal+Operations.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSerialDisposable.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACScopedDisposable.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACReturnSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACReplaySubject.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACScheduler+Subclass.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACQueueScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACQueueScheduler+Subclass.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACPassthroughSubscriber.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACMulticastConnection.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACKVOTrampoline.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACKVOProxy.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACKVOChannel.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACIndexSetSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACImmediateScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACGroupedSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACEvent.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACErrorSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACEagerSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDynamicSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDynamicSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDynamicPropertySuperclass.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDelegateProxy.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDisposable.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACCompoundDisposable.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACCommand.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACChannel.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACBlockTrampoline.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSubscriber.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSubject.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACBehaviorSubject.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACStream.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACArraySequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSUserDefaults+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSURLConnection+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSString+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSString+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSString+RACKeyPathUtilities.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSSet+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSOrderedSet+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACSelectorSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACPropertySubscribing.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACLifting.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACKVOWrapper.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACDescription.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACDeallocating.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSNotificationCenter+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSInvocation+RACTypeParsing.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSIndexSet+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSFileHandle+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSEnumerator+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSDictionary+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSData+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSArray+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/extobjc/EXTScope.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/extobjc/metamacros.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Headers/Private/ReactiveCocoa/ReactiveCocoa/EXTKeyPathCoding.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Target Support Files/ReactiveCocoa/ReactiveCocoa-umbrella.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Intermediates/Pods.build/Debug-iphonesimulator/ReactiveCocoa.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Result.framework/Modules/Result.swiftmodule/x86_64.swiftmodule"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Result.framework/Headers/Result-Swift.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Target Support Files/Result/Result-umbrella.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Intermediates/Pods.build/Debug-iphonesimulator/Result.build/module.modulemap"
+interface-hash: "eb1a2eecd9526c05889290542d206f1e"

@@ -7,12 +7,12 @@ provides-member:
 - ["V11FlickrSwift11FlickrPhoto", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "FlickrPhoto"
-- "NSURL"
-- !private "StringLiteralType"
 - "Int"
+- "NSURL"
 - !private "UnicodeScalarType"
+- "String"
+- !private "StringLiteralType"
+- "FlickrPhoto"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Sb", "deinit"]

@@ -9,6 +9,8 @@
 import UIKit
 import SDWebImage
 import Alamofire
+import ReactiveCocoa
+import Result
 
 
 let kTableViewCellIdentifier = "Cell"
@@ -139,4 +141,10 @@ extension ViewController {
         
         
     }
+    
+    
+//    func performReactiveSearchWithText(searchText: String) {
+//        self.flickrRequest.
+//    }
+    
 }

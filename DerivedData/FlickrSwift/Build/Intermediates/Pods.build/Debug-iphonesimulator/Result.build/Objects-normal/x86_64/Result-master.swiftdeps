@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "fe737dad454c62a6b83964fe98abcf8e"
+build_time: [514675125, 83307000]
+inputs:
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Result/Result/Result.swift": [514675120, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Result/Result/ResultType.swift": [514675120, 0]

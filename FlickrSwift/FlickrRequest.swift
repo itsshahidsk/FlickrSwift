@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import 
 
 let kAPIKey = "bb0743ec1df4ea2f3a99248d551e115e"
 
@@ -123,6 +124,29 @@ class FlickrRequest: NSObject {
             })
             completionHandler(error: nil,photos: downloadedFlickrPhotos)
         }
+        
+    }
+    
+    
+    func searchPhotosUsinReactiveCocoaWithSearchText(searchText: String, forPage page:Int, andCompletionHandler completionHandler: FlickrResponse) {
+   
+        guard  let searchURLAllowedString = searchText.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet()) else {
+            print("Invalid URL Text")
+            completionHandler(error:invalidResponseError , photos: nil)
+            return
+        }
+        
+        let urlString = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(kAPIKey)&text=\(searchURLAllowedString)&per_page=30&page=\(page)&format=json&nojsoncallback=1"
+        
+        guard let validURL = NSURL(string: urlString) else {
+            print("Invalid url string")
+            return
+        }
+        
+        
+        let searchResults = validURL.flat
+        //Need to make a webservice call here using reactive cocoa stuff
+        
         
     }
     

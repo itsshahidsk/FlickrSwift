@@ -7,28 +7,28 @@ provides-nominal:
 provides-member:
 - ["C11FlickrSwift13FlickrRequest", ""]
 provides-dynamic-lookup:
-- "defaultSession"
 - "invalidResponseError"
+- "defaultSession"
 depends-top-level:
-- !private "NSCharacterSet"
-- "String"
-- !private "Alamofire"
-- !private "print"
-- "NSURLSession"
 - "FlickrRequest"
-- "NSObject"
-- "kAPIKey"
-- !private "AnyObject"
-- !private "NSJSONSerialization"
-- "FlickrPhoto"
-- "NSURLSessionConfiguration"
 - !private "NSJSONReadingOptions"
-- !private "NSURL"
+- !private "Alamofire"
+- !private "NSCharacterSet"
+- "NSObject"
 - "Dictionary"
-- "Int"
-- "NSError"
-- "StringLiteralType"
+- "NSURLSessionConfiguration"
 - !private "??"
+- !private "NSURL"
+- "StringLiteralType"
+- "FlickrPhoto"
+- !private "NSJSONSerialization"
+- "kAPIKey"
+- "Int"
+- !private "AnyObject"
+- "NSError"
+- "NSURLSession"
+- "String"
+- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "Alamofire"]
 - !private ["Ps9AnyObject", "FlickrPhoto"]
@@ -51,6 +51,7 @@ depends-member:
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "responseJSON"]
 - !private ["Ps9AnyObject", "resume"]
+- ["Ps9AnyObject", "searchPhotosUsinReactiveCocoaWithSearchText"]
 - ["Ps9AnyObject", "searchPhotosUsingAlamofireWithSearchText"]
 - ["Ps9AnyObject", "searchPhotosWithSearchText"]
 - !private ["Ps9AnyObject", "stringByAddingPercentEncodingWithAllowedCharacters"]
@@ -100,6 +101,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "kAPIKey"]
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "resume"]
+- ["Ps11CVarArgType", "searchPhotosUsinReactiveCocoaWithSearchText"]
 - ["Ps11CVarArgType", "searchPhotosUsingAlamofireWithSearchText"]
 - ["Ps11CVarArgType", "searchPhotosWithSearchText"]
 - !private ["Ps11CVarArgType", "stringByAddingPercentEncodingWithAllowedCharacters"]
@@ -148,6 +150,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "responseJSON"]
 - !private ["Ps28CustomDebugStringConvertible", "result"]
 - !private ["Ps28CustomDebugStringConvertible", "resume"]
+- ["Ps28CustomDebugStringConvertible", "searchPhotosUsinReactiveCocoaWithSearchText"]
 - ["Ps28CustomDebugStringConvertible", "searchPhotosUsingAlamofireWithSearchText"]
 - ["Ps28CustomDebugStringConvertible", "searchPhotosWithSearchText"]
 - !private ["Ps28CustomDebugStringConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
@@ -188,6 +191,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "responseJSON"]
 - !private ["Ps23CustomStringConvertible", "result"]
 - !private ["Ps23CustomStringConvertible", "resume"]
+- ["Ps23CustomStringConvertible", "searchPhotosUsinReactiveCocoaWithSearchText"]
 - ["Ps23CustomStringConvertible", "searchPhotosUsingAlamofireWithSearchText"]
 - ["Ps23CustomStringConvertible", "searchPhotosWithSearchText"]
 - !private ["Ps23CustomStringConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
@@ -229,6 +233,7 @@ depends-member:
 - !private ["Ps9Equatable", "kAPIKey"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "resume"]
+- ["Ps9Equatable", "searchPhotosUsinReactiveCocoaWithSearchText"]
 - ["Ps9Equatable", "searchPhotosUsingAlamofireWithSearchText"]
 - ["Ps9Equatable", "searchPhotosWithSearchText"]
 - !private ["Ps9Equatable", "stringByAddingPercentEncodingWithAllowedCharacters"]
@@ -259,6 +264,7 @@ depends-member:
 - ["C11FlickrSwift13FlickrRequest", "invalidResponseError"]
 - !private ["C11FlickrSwift13FlickrRequest", "kAPIKey"]
 - !private ["C11FlickrSwift13FlickrRequest", "print"]
+- ["C11FlickrSwift13FlickrRequest", "searchPhotosUsinReactiveCocoaWithSearchText"]
 - ["C11FlickrSwift13FlickrRequest", "searchPhotosUsingAlamofireWithSearchText"]
 - ["C11FlickrSwift13FlickrRequest", "searchPhotosWithSearchText"]
 - !private ["Sf", "deinit"]
@@ -288,6 +294,7 @@ depends-member:
 - !private ["Ps8Hashable", "kAPIKey"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "resume"]
+- ["Ps8Hashable", "searchPhotosUsinReactiveCocoaWithSearchText"]
 - ["Ps8Hashable", "searchPhotosUsingAlamofireWithSearchText"]
 - ["Ps8Hashable", "searchPhotosWithSearchText"]
 - !private ["Ps8Hashable", "stringByAddingPercentEncodingWithAllowedCharacters"]
@@ -380,6 +387,7 @@ depends-member:
 - !private ["CSo8NSObject", "kAPIKey"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "resume"]
+- ["CSo8NSObject", "searchPhotosUsinReactiveCocoaWithSearchText"]
 - ["CSo8NSObject", "searchPhotosUsingAlamofireWithSearchText"]
 - ["CSo8NSObject", "searchPhotosWithSearchText"]
 - !private ["CSo8NSObject", "stringByAddingPercentEncodingWithAllowedCharacters"]
@@ -404,6 +412,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "kAPIKey"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "resume"]
+- ["PSo16NSObjectProtocol", "searchPhotosUsinReactiveCocoaWithSearchText"]
 - ["PSo16NSObjectProtocol", "searchPhotosUsingAlamofireWithSearchText"]
 - ["PSo16NSObjectProtocol", "searchPhotosWithSearchText"]
 - !private ["PSo16NSObjectProtocol", "stringByAddingPercentEncodingWithAllowedCharacters"]
@@ -676,4 +685,4 @@ depends-external:
 - "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
-interface-hash: "066b3b17de28b8bb7db9cf44b873efab"
+interface-hash: "6196669afd8ce2c3ac083dd5ee3f3290"

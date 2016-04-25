@@ -1,0 +1,588 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FlattenStrategy"
+provides-nominal:
+- "O13ReactiveCocoa15FlattenStrategy"
+provides-member:
+- ["O13ReactiveCocoa15FlattenStrategy", ""]
+- ["P13ReactiveCocoa10SignalType", ""]
+- ["P13ReactiveCocoa18SignalProducerType", ""]
+- ["P13ReactiveCocoa10SignalType", "flatten"]
+- ["P13ReactiveCocoa18SignalProducerType", "flatten"]
+- ["P13ReactiveCocoa10SignalType", "flatten"]
+- ["P13ReactiveCocoa18SignalProducerType", "flatten"]
+- ["P13ReactiveCocoa18SignalProducerType", "concat"]
+- ["P13ReactiveCocoa10SignalType", "merge"]
+- ["P13ReactiveCocoa10SignalType", "flatMap"]
+- ["P13ReactiveCocoa10SignalType", "flatMap"]
+- ["P13ReactiveCocoa18SignalProducerType", "flatMap"]
+- ["P13ReactiveCocoa18SignalProducerType", "flatMap"]
+- ["P13ReactiveCocoa10SignalType", "flatMapError"]
+- ["P13ReactiveCocoa18SignalProducerType", "flatMapError"]
+provides-dynamic-lookup:
+depends-top-level:
+- "SignalProducerType"
+- "SequenceType"
+- "SignalType"
+- !private "ConcatState"
+- !private "Disposable"
+- !private "Atomic"
+- !private "IntegerLiteralType"
+- !private "Observer"
+- !private "ErrorType"
+- "=="
+- !private "Bool"
+- "FlattenStrategy"
+- "SignalProducer"
+- !private "??"
+- !private "CompositeDisposable"
+- !private "+="
+- !private "&&"
+- "Signal"
+- !private "!"
+- !private "SerialDisposable"
+- "Array"
+- "Equatable"
+- !private "FloatLiteralType"
+- !private "-"
+- !private "LatestState"
+- "BooleanLiteralType"
+- !private "+"
+depends-member:
+- !private ["Ps9AnyObject", "Atomic"]
+- !private ["Ps9AnyObject", "Error"]
+- !private ["Ps9AnyObject", "Observer"]
+- !private ["Ps9AnyObject", "Value"]
+- !private ["Ps9AnyObject", "addDisposable"]
+- !private ["Ps9AnyObject", "dequeueSignalProducer"]
+- !private ["Ps9AnyObject", "disposable"]
+- !private ["Ps9AnyObject", "disposed"]
+- !private ["Ps9AnyObject", "enqueueSignalProducer"]
+- !private ["Ps9AnyObject", "flatten"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "innerDisposable"]
+- !private ["Ps9AnyObject", "modify"]
+- !private ["Ps9AnyObject", "observe"]
+- !private ["Ps9AnyObject", "observeConcat"]
+- !private ["Ps9AnyObject", "observeFlatMapError"]
+- !private ["Ps9AnyObject", "observeMerge"]
+- !private ["Ps9AnyObject", "observeSwitchToLatest"]
+- !private ["Ps9AnyObject", "observer"]
+- !private ["Ps9AnyObject", "queuedSignalProducers"]
+- !private ["Ps9AnyObject", "remove"]
+- !private ["Ps9AnyObject", "startNextSignalProducer"]
+- !private ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "first"]
+- !private ["Sa", "isEmpty"]
+- !private ["Sa", "removeAtIndex"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "append"]
+- !private ["Ps23ArrayLiteralConvertible", "first"]
+- !private ["Ps23ArrayLiteralConvertible", "isEmpty"]
+- !private ["Ps23ArrayLiteralConvertible", "removeAtIndex"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["C13ReactiveCocoa6Atomic", "init"]
+- !private ["C13ReactiveCocoa6Atomic", "modify"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "hashValue"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "hashValue"]
+- !private ["Ps14CollectionType", "Element"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "append"]
+- !private ["Ps14CollectionType", "first"]
+- !private ["Ps14CollectionType", "isEmpty"]
+- !private ["Ps14CollectionType", "removeAtIndex"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["C13ReactiveCocoa19CompositeDisposable", "addDisposable"]
+- !private ["C13ReactiveCocoa19CompositeDisposable", "deinit"]
+- !private ["C13ReactiveCocoa19CompositeDisposable", "disposed"]
+- !private ["C13ReactiveCocoa19CompositeDisposable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "first"]
+- !private ["Ps28CustomDebugStringConvertible", "isEmpty"]
+- !private ["Ps28CustomDebugStringConvertible", "removeAtIndex"]
+- !private ["Ps23CustomStringConvertible", "Completed"]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "Failed"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Interrupted"]
+- !private ["Ps23CustomStringConvertible", "Next"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "first"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "isEmpty"]
+- !private ["Ps23CustomStringConvertible", "removeAtIndex"]
+- !private ["P13ReactiveCocoa10Disposable", "addDisposable"]
+- !private ["P13ReactiveCocoa10Disposable", "disposed"]
+- !private ["P13ReactiveCocoa10Disposable", "init"]
+- !private ["P13ReactiveCocoa10Disposable", "innerDisposable"]
+- !private ["CC13ReactiveCocoa19CompositeDisposable16DisposableHandle", "deinit"]
+- !private ["CC13ReactiveCocoa19CompositeDisposable16DisposableHandle", "remove"]
+- ["Ps9Equatable", "Concat"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- ["Ps9Equatable", "Latest"]
+- ["Ps9Equatable", "Merge"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", ""]
+- !private ["O13ReactiveCocoa5Event", "Completed"]
+- !private ["O13ReactiveCocoa5Event", "Failed"]
+- !private ["O13ReactiveCocoa5Event", "Interrupted"]
+- !private ["O13ReactiveCocoa5Event", "Next"]
+- !private ["P13ReactiveCocoa9EventType", "Completed"]
+- !private ["P13ReactiveCocoa9EventType", "Failed"]
+- !private ["P13ReactiveCocoa9EventType", "Interrupted"]
+- !private ["P13ReactiveCocoa9EventType", "Next"]
+- ["O13ReactiveCocoa15FlattenStrategy", "Concat"]
+- ["O13ReactiveCocoa15FlattenStrategy", "Latest"]
+- ["O13ReactiveCocoa15FlattenStrategy", "Merge"]
+- ["O13ReactiveCocoa15FlattenStrategy", "deinit"]
+- ["O13ReactiveCocoa15FlattenStrategy", "hashValue"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "hashValue"]
+- !private ["Ps13GeneratorType", "Element"]
+- ["Ps8Hashable", "Concat"]
+- !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- ["Ps8Hashable", "Latest"]
+- ["Ps8Hashable", "Merge"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "first"]
+- !private ["Ps9Indexable", "isEmpty"]
+- !private ["Ps9Indexable", "removeAtIndex"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "hashValue"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "hashValue"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "hashValue"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "hashValue"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "hashValue"]
+- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "append"]
+- !private ["Ps21MutableCollectionType", "first"]
+- !private ["Ps21MutableCollectionType", "isEmpty"]
+- !private ["Ps21MutableCollectionType", "removeAtIndex"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "first"]
+- !private ["Ps16MutableIndexable", "isEmpty"]
+- !private ["Ps16MutableIndexable", "removeAtIndex"]
+- !private ["Ps16MutableSliceable", "Element"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "append"]
+- !private ["Ps16MutableSliceable", "first"]
+- !private ["Ps16MutableSliceable", "isEmpty"]
+- !private ["Ps16MutableSliceable", "removeAtIndex"]
+- !private ["Ps21NilLiteralConvertible", "Some"]
+- !private ["V13ReactiveCocoa8Observer", "action"]
+- !private ["V13ReactiveCocoa8Observer", "sendCompleted"]
+- !private ["V13ReactiveCocoa8Observer", "sendFailed"]
+- !private ["V13ReactiveCocoa8Observer", "sendInterrupted"]
+- !private ["V13ReactiveCocoa8Observer", "sendNext"]
+- !private ["Sq", "Some"]
+- !private ["P13ReactiveCocoa12OptionalType", "Some"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "hashValue"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "append"]
+- !private ["Ps30RangeReplaceableCollectionType", "first"]
+- !private ["Ps30RangeReplaceableCollectionType", "isEmpty"]
+- !private ["Ps30RangeReplaceableCollectionType", "removeAtIndex"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "append"]
+- !private ["Ps12SequenceType", "first"]
+- !private ["Ps12SequenceType", "isEmpty"]
+- !private ["Ps12SequenceType", "removeAtIndex"]
+- !private ["C13ReactiveCocoa16SerialDisposable", "deinit"]
+- !private ["C13ReactiveCocoa16SerialDisposable", "init"]
+- !private ["C13ReactiveCocoa16SerialDisposable", "innerDisposable"]
+- !private ["C13ReactiveCocoa6Signal", "Error"]
+- !private ["C13ReactiveCocoa6Signal", "Observer"]
+- !private ["C13ReactiveCocoa6Signal", "Value"]
+- !private ["C13ReactiveCocoa6Signal", "deinit"]
+- !private ["C13ReactiveCocoa6Signal", "flatten"]
+- !private ["C13ReactiveCocoa6Signal", "init"]
+- !private ["C13ReactiveCocoa6Signal", "observe"]
+- !private ["C13ReactiveCocoa6Signal", "observeConcat"]
+- !private ["C13ReactiveCocoa6Signal", "observeFlatMapError"]
+- !private ["C13ReactiveCocoa6Signal", "observeMerge"]
+- !private ["C13ReactiveCocoa6Signal", "observeSwitchToLatest"]
+- !private ["V13ReactiveCocoa14SignalProducer", "Error"]
+- !private ["V13ReactiveCocoa14SignalProducer", "Value"]
+- !private ["V13ReactiveCocoa14SignalProducer", "deinit"]
+- !private ["V13ReactiveCocoa14SignalProducer", "empty"]
+- !private ["V13ReactiveCocoa14SignalProducer", "flatten"]
+- !private ["V13ReactiveCocoa14SignalProducer", "init"]
+- !private ["V13ReactiveCocoa14SignalProducer", "on"]
+- !private ["V13ReactiveCocoa14SignalProducer", "startWithSignal"]
+- ["P13ReactiveCocoa18SignalProducerType", "Error"]
+- ["P13ReactiveCocoa18SignalProducerType", "FlattenStrategy"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "SerialDisposable"]
+- ["P13ReactiveCocoa18SignalProducerType", "Signal"]
+- ["P13ReactiveCocoa18SignalProducerType", "SignalProducer"]
+- ["P13ReactiveCocoa18SignalProducerType", "SignalProducerType"]
+- ["P13ReactiveCocoa18SignalProducerType", "SignalType"]
+- ["P13ReactiveCocoa18SignalProducerType", "Value"]
+- ["P13ReactiveCocoa18SignalProducerType", "concat"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "empty"]
+- ["P13ReactiveCocoa18SignalProducerType", "flatMap"]
+- ["P13ReactiveCocoa18SignalProducerType", "flatMapError"]
+- ["P13ReactiveCocoa18SignalProducerType", "flatten"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "init"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "map"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "merge"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "on"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "producer"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "startWithSignal"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "switchToLatest"]
+- !private ["P13ReactiveCocoa10SignalType", "Atomic"]
+- !private ["P13ReactiveCocoa10SignalType", "CompositeDisposable"]
+- !private ["P13ReactiveCocoa10SignalType", "ConcatState"]
+- !private ["P13ReactiveCocoa10SignalType", "Disposable"]
+- ["P13ReactiveCocoa10SignalType", "Error"]
+- ["P13ReactiveCocoa10SignalType", "FlattenStrategy"]
+- !private ["P13ReactiveCocoa10SignalType", "LatestState"]
+- !private ["P13ReactiveCocoa10SignalType", "Observer"]
+- ["P13ReactiveCocoa10SignalType", "SequenceType"]
+- !private ["P13ReactiveCocoa10SignalType", "SerialDisposable"]
+- ["P13ReactiveCocoa10SignalType", "Signal"]
+- ["P13ReactiveCocoa10SignalType", "SignalProducer"]
+- ["P13ReactiveCocoa10SignalType", "SignalProducerType"]
+- ["P13ReactiveCocoa10SignalType", "SignalType"]
+- ["P13ReactiveCocoa10SignalType", "Value"]
+- !private ["P13ReactiveCocoa10SignalType", "concat"]
+- ["P13ReactiveCocoa10SignalType", "flatMap"]
+- ["P13ReactiveCocoa10SignalType", "flatMapError"]
+- ["P13ReactiveCocoa10SignalType", "flatten"]
+- !private ["P13ReactiveCocoa10SignalType", "init"]
+- !private ["P13ReactiveCocoa10SignalType", "map"]
+- ["P13ReactiveCocoa10SignalType", "merge"]
+- !private ["P13ReactiveCocoa10SignalType", "observe"]
+- !private ["P13ReactiveCocoa10SignalType", "observeConcat"]
+- !private ["P13ReactiveCocoa10SignalType", "observeFlatMapError"]
+- !private ["P13ReactiveCocoa10SignalType", "observeMerge"]
+- !private ["P13ReactiveCocoa10SignalType", "observeSwitchToLatest"]
+- !private ["P13ReactiveCocoa10SignalType", "switchToLatest"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "hashValue"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "hashValue"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "hashValue"]
+- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "append"]
+- !private ["Ps10_ArrayType", "first"]
+- !private ["Ps10_ArrayType", "isEmpty"]
+- !private ["Ps10_ArrayType", "removeAtIndex"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "first"]
+- !private ["Ps24_DestructorSafeContainer", "isEmpty"]
+- !private ["Ps24_DestructorSafeContainer", "removeAtIndex"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "hashValue"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "first"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "isEmpty"]
+- !private ["Ps21_ObjectiveCBridgeable", "removeAtIndex"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "hashValue"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "append"]
+- !private ["Ps12_Reflectable", "first"]
+- !private ["Ps12_Reflectable", "hashValue"]
+- !private ["Ps12_Reflectable", "isEmpty"]
+- !private ["Ps12_Reflectable", "removeAtIndex"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "hashValue"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
+- !private "C13ReactiveCocoa6Atomic"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- !private "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- !private "C13ReactiveCocoa19CompositeDisposable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "P13ReactiveCocoa10Disposable"
+- !private "CC13ReactiveCocoa19CompositeDisposable16DisposableHandle"
+- "Ps9Equatable"
+- !private "O13ReactiveCocoa5Event"
+- !private "P13ReactiveCocoa9EventType"
+- "O13ReactiveCocoa15FlattenStrategy"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- !private "Ps21NilLiteralConvertible"
+- !private "V13ReactiveCocoa8Observer"
+- !private "Sq"
+- !private "P13ReactiveCocoa12OptionalType"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps12SequenceType"
+- !private "C13ReactiveCocoa16SerialDisposable"
+- !private "C13ReactiveCocoa6Signal"
+- !private "V13ReactiveCocoa14SignalProducer"
+- "P13ReactiveCocoa18SignalProducerType"
+- "P13ReactiveCocoa10SignalType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACObjCRuntime.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIControl+RACSignalSupportPrivate.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UISwitch+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UISlider+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIRefreshControl+RACCommandSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIImagePickerController+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/MKAnnotationView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIActionSheet+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIAlertView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIBarButtonItem+RACCommandSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIDatePicker+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIStepper+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UITextView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UITextField+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UITableViewHeaderFooterView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UITableViewCell+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UISegmentedControl+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIGestureRecognizer+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIControl+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UICollectionReusableView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIButton+RACCommandSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/ReactiveCocoa.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/ReactiveCocoa-Bridging-Header.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACValueTransformer.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACUnit.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACUnarySequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACTupleSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACTuple.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACTestScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACTargetQueueScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSubscriptionScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSubscriptingAssignmentTrampoline.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACStringSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSignalSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSignal+Operations.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSerialDisposable.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACScopedDisposable.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACReturnSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACReplaySubject.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACScheduler+Subclass.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACQueueScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACQueueScheduler+Subclass.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACPassthroughSubscriber.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACMulticastConnection.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACKVOTrampoline.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACKVOProxy.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACKVOChannel.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACIndexSetSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACImmediateScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACGroupedSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACEvent.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACErrorSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACEagerSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDynamicSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDynamicSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDynamicPropertySuperclass.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDelegateProxy.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDisposable.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACCompoundDisposable.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACCommand.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACChannel.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACBlockTrampoline.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSubscriber.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSubject.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACBehaviorSubject.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACStream.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACArraySequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSUserDefaults+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSURLConnection+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSString+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSString+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSString+RACKeyPathUtilities.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSSet+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSOrderedSet+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACSelectorSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACPropertySubscribing.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACLifting.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACKVOWrapper.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACDescription.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACDeallocating.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSNotificationCenter+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSInvocation+RACTypeParsing.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSIndexSet+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSFileHandle+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSEnumerator+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSDictionary+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSData+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSArray+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/extobjc/EXTScope.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/extobjc/metamacros.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Headers/Private/ReactiveCocoa/ReactiveCocoa/EXTKeyPathCoding.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Target Support Files/ReactiveCocoa/ReactiveCocoa-umbrella.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Intermediates/Pods.build/Debug-iphonesimulator/ReactiveCocoa.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Result.framework/Modules/Result.swiftmodule/x86_64.swiftmodule"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Result.framework/Headers/Result-Swift.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Target Support Files/Result/Result-umbrella.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Intermediates/Pods.build/Debug-iphonesimulator/Result.build/module.modulemap"
+interface-hash: "e1d092ff85fe981a4585fa0c489048c6"

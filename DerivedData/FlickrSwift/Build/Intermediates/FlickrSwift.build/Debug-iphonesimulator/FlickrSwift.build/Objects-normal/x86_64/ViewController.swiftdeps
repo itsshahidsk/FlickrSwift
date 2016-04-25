@@ -8,44 +8,46 @@ provides-member:
 - ["C11FlickrSwift14ViewController", ""]
 - ["C11FlickrSwift14ViewController", "performSearchWithText"]
 - ["C11FlickrSwift14ViewController", "performAlamofireSearchWithText"]
+- ["C11FlickrSwift14ViewController", "performReactiveSearchWithText"]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "searchBarSearchButtonClicked"
-- "performSearchWithText"
 - "searchBar"
 - "performAlamofireSearchWithText"
-- "viewDidLoad"
-- "tableview"
-- "didReceiveMemoryWarning"
 - "flickrRequest"
+- "searchBarSearchButtonClicked"
+- "didReceiveMemoryWarning"
+- "tableview"
+- "viewDidLoad"
+- "performSearchWithText"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "performReactiveSearchWithText"
 depends-top-level:
-- "UITableViewDelegate"
-- "UITableView"
-- "UIViewController"
-- !private "dispatch_async"
-- !private "dispatch_get_main_queue"
-- !private "BooleanLiteralType"
-- "UITableViewDataSource"
-- !private "print"
-- "ViewController"
-- "String"
-- "UITableViewCell"
-- "FlickrPhoto"
-- "UISearchBar"
-- !private "UIApplication"
-- "StringLiteralType"
-- "CGFloat"
+- !private "=="
 - "kTableViewCellIdentifier"
-- "NSIndexPath"
-- !private "Bool"
+- !private "UIApplication"
+- !private ">"
 - "Int"
+- !private "Bool"
 - "FlickrRequest"
 - "UISearchBarDelegate"
-- !private "=="
-- !private ">"
+- "CGFloat"
+- "UITableView"
+- "StringLiteralType"
+- "NSIndexPath"
+- "String"
+- "UIViewController"
+- !private "dispatch_get_main_queue"
+- "UITableViewDataSource"
+- !private "print"
+- !private "dispatch_async"
+- "ViewController"
+- !private "BooleanLiteralType"
+- "FlickrPhoto"
+- "UITableViewCell"
+- "UITableViewDelegate"
+- "UISearchBar"
 depends-member:
 - ["Ps9AnyObject", "FlickrPhoto"]
 - ["Ps9AnyObject", "FlickrRequest"]
@@ -65,6 +67,7 @@ depends-member:
 - !private ["Ps9AnyObject", "networkActivityIndicatorVisible"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
 - ["Ps9AnyObject", "performAlamofireSearchWithText"]
+- ["Ps9AnyObject", "performReactiveSearchWithText"]
 - ["Ps9AnyObject", "performSearchWithText"]
 - ["Ps9AnyObject", "positionForBar"]
 - !private ["Ps9AnyObject", "print"]
@@ -153,6 +156,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "networkActivityIndicatorVisible"]
 - ["Ps11CVarArgType", "numberOfSectionsInTableView"]
 - ["Ps11CVarArgType", "performAlamofireSearchWithText"]
+- ["Ps11CVarArgType", "performReactiveSearchWithText"]
 - ["Ps11CVarArgType", "performSearchWithText"]
 - ["Ps11CVarArgType", "positionForBar"]
 - !private ["Ps11CVarArgType", "print"]
@@ -235,6 +239,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "networkActivityIndicatorVisible"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps28CustomDebugStringConvertible", "performAlamofireSearchWithText"]
+- ["Ps28CustomDebugStringConvertible", "performReactiveSearchWithText"]
 - ["Ps28CustomDebugStringConvertible", "performSearchWithText"]
 - ["Ps28CustomDebugStringConvertible", "positionForBar"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -303,6 +308,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "networkActivityIndicatorVisible"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps23CustomStringConvertible", "performAlamofireSearchWithText"]
+- ["Ps23CustomStringConvertible", "performReactiveSearchWithText"]
 - ["Ps23CustomStringConvertible", "performSearchWithText"]
 - ["Ps23CustomStringConvertible", "positionForBar"]
 - !private ["Ps23CustomStringConvertible", "print"]
@@ -366,6 +372,7 @@ depends-member:
 - !private ["Ps9Equatable", "networkActivityIndicatorVisible"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
 - ["Ps9Equatable", "performAlamofireSearchWithText"]
+- ["Ps9Equatable", "performReactiveSearchWithText"]
 - ["Ps9Equatable", "performSearchWithText"]
 - ["Ps9Equatable", "positionForBar"]
 - !private ["Ps9Equatable", "print"]
@@ -439,6 +446,7 @@ depends-member:
 - !private ["Ps8Hashable", "networkActivityIndicatorVisible"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
 - ["Ps8Hashable", "performAlamofireSearchWithText"]
+- ["Ps8Hashable", "performReactiveSearchWithText"]
 - ["Ps8Hashable", "performSearchWithText"]
 - ["Ps8Hashable", "positionForBar"]
 - !private ["Ps8Hashable", "print"]
@@ -548,6 +556,7 @@ depends-member:
 - !private ["PSo8NSCoding", "kTableViewCellIdentifier"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - ["PSo8NSCoding", "performAlamofireSearchWithText"]
+- ["PSo8NSCoding", "performReactiveSearchWithText"]
 - ["PSo8NSCoding", "performSearchWithText"]
 - ["PSo8NSCoding", "positionForBar"]
 - !private ["PSo8NSCoding", "print"]
@@ -602,6 +611,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "kTableViewCellIdentifier"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - ["PSo26NSExtensionRequestHandling", "performAlamofireSearchWithText"]
+- ["PSo26NSExtensionRequestHandling", "performReactiveSearchWithText"]
 - ["PSo26NSExtensionRequestHandling", "performSearchWithText"]
 - ["PSo26NSExtensionRequestHandling", "positionForBar"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
@@ -660,6 +670,7 @@ depends-member:
 - !private ["CSo8NSObject", "networkActivityIndicatorVisible"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - ["CSo8NSObject", "performAlamofireSearchWithText"]
+- ["CSo8NSObject", "performReactiveSearchWithText"]
 - ["CSo8NSObject", "performSearchWithText"]
 - ["CSo8NSObject", "positionForBar"]
 - !private ["CSo8NSObject", "print"]
@@ -717,6 +728,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "networkActivityIndicatorVisible"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - ["PSo16NSObjectProtocol", "performAlamofireSearchWithText"]
+- ["PSo16NSObjectProtocol", "performReactiveSearchWithText"]
 - ["PSo16NSObjectProtocol", "performSearchWithText"]
 - ["PSo16NSObjectProtocol", "positionForBar"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -837,6 +849,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "kTableViewCellIdentifier"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - ["PSo21UIAppearanceContainer", "performAlamofireSearchWithText"]
+- ["PSo21UIAppearanceContainer", "performReactiveSearchWithText"]
 - ["PSo21UIAppearanceContainer", "performSearchWithText"]
 - ["PSo21UIAppearanceContainer", "positionForBar"]
 - !private ["PSo21UIAppearanceContainer", "print"]
@@ -931,6 +944,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "kTableViewCellIdentifier"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - ["PSo18UIContentContainer", "performAlamofireSearchWithText"]
+- ["PSo18UIContentContainer", "performReactiveSearchWithText"]
 - ["PSo18UIContentContainer", "performSearchWithText"]
 - ["PSo18UIContentContainer", "positionForBar"]
 - !private ["PSo18UIContentContainer", "print"]
@@ -993,6 +1007,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "kTableViewCellIdentifier"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UIFocusEnvironment", "performAlamofireSearchWithText"]
+- ["PSo18UIFocusEnvironment", "performReactiveSearchWithText"]
 - ["PSo18UIFocusEnvironment", "performSearchWithText"]
 - ["PSo18UIFocusEnvironment", "positionForBar"]
 - !private ["PSo18UIFocusEnvironment", "print"]
@@ -1057,6 +1072,7 @@ depends-member:
 - !private ["CSo11UIResponder", "networkActivityIndicatorVisible"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - ["CSo11UIResponder", "performAlamofireSearchWithText"]
+- ["CSo11UIResponder", "performReactiveSearchWithText"]
 - ["CSo11UIResponder", "performSearchWithText"]
 - ["CSo11UIResponder", "positionForBar"]
 - !private ["CSo11UIResponder", "print"]
@@ -1192,6 +1208,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "kTableViewCellIdentifier"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - ["PSo16UIStateRestoring", "performAlamofireSearchWithText"]
+- ["PSo16UIStateRestoring", "performReactiveSearchWithText"]
 - ["PSo16UIStateRestoring", "performSearchWithText"]
 - ["PSo16UIStateRestoring", "positionForBar"]
 - !private ["PSo16UIStateRestoring", "print"]
@@ -1325,6 +1342,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "kTableViewCellIdentifier"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UITraitEnvironment", "performAlamofireSearchWithText"]
+- ["PSo18UITraitEnvironment", "performReactiveSearchWithText"]
 - ["PSo18UITraitEnvironment", "performSearchWithText"]
 - ["PSo18UITraitEnvironment", "positionForBar"]
 - !private ["PSo18UITraitEnvironment", "print"]
@@ -1390,6 +1408,7 @@ depends-member:
 - !private ["CSo16UIViewController", "kTableViewCellIdentifier"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - ["CSo16UIViewController", "performAlamofireSearchWithText"]
+- ["CSo16UIViewController", "performReactiveSearchWithText"]
 - ["CSo16UIViewController", "performSearchWithText"]
 - ["CSo16UIViewController", "positionForBar"]
 - !private ["CSo16UIViewController", "print"]
@@ -1452,6 +1471,7 @@ depends-member:
 - !private ["C11FlickrSwift14ViewController", "kTableViewCellIdentifier"]
 - ["C11FlickrSwift14ViewController", "numberOfSectionsInTableView"]
 - ["C11FlickrSwift14ViewController", "performAlamofireSearchWithText"]
+- ["C11FlickrSwift14ViewController", "performReactiveSearchWithText"]
 - ["C11FlickrSwift14ViewController", "performSearchWithText"]
 - ["C11FlickrSwift14ViewController", "positionForBar"]
 - !private ["C11FlickrSwift14ViewController", "print"]
@@ -1701,4 +1721,4 @@ depends-external:
 - "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
-interface-hash: "5b03860440bce95e39452fabfae8f23b"
+interface-hash: "f5979377120484216066eb759c910533"

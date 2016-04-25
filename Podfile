@@ -9,6 +9,8 @@ pod 'SDWebImage', '~>3.7'
 
 pod 'Alamofire', '~>3.3'
 
+pod 'ReactiveCocoa', '~> 4.0.0'
+
 end
 
 target 'FlickrSwiftTests' do

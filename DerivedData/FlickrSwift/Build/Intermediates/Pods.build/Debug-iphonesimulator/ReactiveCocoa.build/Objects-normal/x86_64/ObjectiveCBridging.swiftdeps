@@ -1,0 +1,632 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "toRACCommand"
+- "toRACCommand"
+provides-nominal:
+- "CSo13RACDisposable"
+- "CSo12RACScheduler"
+provides-member:
+- ["CSo13RACDisposable", ""]
+- ["CSo12RACScheduler", ""]
+- ["C13ReactiveCocoa18ImmediateScheduler", ""]
+- ["C13ReactiveCocoa11UIScheduler", ""]
+- ["C13ReactiveCocoa14QueueScheduler", ""]
+- ["CSo9RACSignal", ""]
+- ["P13ReactiveCocoa18SignalProducerType", ""]
+- ["P13ReactiveCocoa10SignalType", ""]
+- ["CSo10RACCommand", ""]
+- ["C13ReactiveCocoa18ImmediateScheduler", "toRACScheduler"]
+- ["C13ReactiveCocoa11UIScheduler", "toRACScheduler"]
+- ["C13ReactiveCocoa14QueueScheduler", "toRACScheduler"]
+- ["CSo9RACSignal", "toSignalProducer"]
+- ["P13ReactiveCocoa18SignalProducerType", "toRACSignal"]
+- ["P13ReactiveCocoa18SignalProducerType", "toRACSignal"]
+- ["P13ReactiveCocoa18SignalProducerType", "toRACSignal"]
+- ["P13ReactiveCocoa18SignalProducerType", "toRACSignal"]
+- ["P13ReactiveCocoa10SignalType", "toRACSignal"]
+- ["P13ReactiveCocoa10SignalType", "toRACSignal"]
+- ["P13ReactiveCocoa10SignalType", "toRACSignal"]
+- ["P13ReactiveCocoa10SignalType", "toRACSignal"]
+- ["CSo10RACCommand", "toAction"]
+provides-dynamic-lookup:
+- "currentDate"
+depends-top-level:
+- "Action"
+- "RACCommand"
+- !private "<~"
+- !private "+="
+- "Disposable"
+- "RACScheduler"
+- "SignalProducer"
+- "AnyObject"
+- !private "BooleanLiteralType"
+- "UIScheduler"
+- "String"
+- "RACDisposable"
+- !private "Bool"
+- !private "StringLiteralType"
+- !private "RACTargetQueueScheduler"
+- !private "defaultNSError"
+- "toRACCommand"
+- "NSError"
+- !private "NSNumber"
+- "Int"
+- !private "Optional"
+- !private "Signal"
+- "RACSignal"
+- "NSDate"
+- !private "??"
+- !private "MutableProperty"
+- !private "Result"
+- "SignalType"
+- !private "NoError"
+- "ImmediateScheduler"
+- "QueueScheduler"
+- "NSTimeInterval"
+- "DateSchedulerType"
+- "OptionalType"
+- "SignalProducerType"
+depends-member:
+- !private ["C13ReactiveCocoa6Action", "NSNumber"]
+- ["C13ReactiveCocoa6Action", "RACSignal"]
+- !private ["C13ReactiveCocoa6Action", "apply"]
+- !private ["C13ReactiveCocoa6Action", "commandEnabled"]
+- !private ["C13ReactiveCocoa6Action", "enabled"]
+- !private ["C13ReactiveCocoa6Action", "init"]
+- !private ["O13ReactiveCocoa11ActionError", "deinit"]
+- !private ["Ps9AnyObject", "Action"]
+- !private ["Ps9AnyObject", "Error"]
+- !private ["Ps9AnyObject", "MutableProperty"]
+- !private ["Ps9AnyObject", "NSDate"]
+- !private ["Ps9AnyObject", "RACScheduler"]
+- !private ["Ps9AnyObject", "RACSignal"]
+- !private ["Ps9AnyObject", "RACTargetQueueScheduler"]
+- !private ["Ps9AnyObject", "SignalProducer"]
+- !private ["Ps9AnyObject", "Value"]
+- !private ["Ps9AnyObject", "Wrapped"]
+- !private ["Ps9AnyObject", "after"]
+- !private ["Ps9AnyObject", "apply"]
+- !private ["Ps9AnyObject", "commandEnabled"]
+- !private ["Ps9AnyObject", "createSignal"]
+- ["Ps9AnyObject", "currentDate"]
+- !private ["Ps9AnyObject", "defaultNSError"]
+- !private ["Ps9AnyObject", "defer"]
+- ["Ps9AnyObject", "dispose"]
+- ["Ps9AnyObject", "disposed"]
+- !private ["Ps9AnyObject", "enabled"]
+- !private ["Ps9AnyObject", "execute"]
+- !private ["Ps9AnyObject", "immediateScheduler"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "mainThreadScheduler"]
+- !private ["Ps9AnyObject", "map"]
+- !private ["Ps9AnyObject", "optionalize"]
+- !private ["Ps9AnyObject", "queue"]
+- ["Ps9AnyObject", "schedule"]
+- ["Ps9AnyObject", "scheduleAfter"]
+- !private ["Ps9AnyObject", "subscribeNext"]
+- ["Ps9AnyObject", "toAction"]
+- !private ["Ps9AnyObject", "toRACSignal"]
+- ["Ps9AnyObject", "toSignalProducer"]
+- !private ["V13ReactiveCocoa11AnyProperty", "deinit"]
+- !private ["V13ReactiveCocoa11AnyProperty", "producer"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "Wrapped"]
+- !private ["Ps11CVarArgType", "Action"]
+- !private ["Ps11CVarArgType", "MutableProperty"]
+- !private ["Ps11CVarArgType", "NSDate"]
+- !private ["Ps11CVarArgType", "RACSignal"]
+- !private ["Ps11CVarArgType", "SignalProducer"]
+- !private ["Ps11CVarArgType", "Wrapped"]
+- !private ["Ps11CVarArgType", "after"]
+- !private ["Ps11CVarArgType", "createSignal"]
+- ["Ps11CVarArgType", "currentDate"]
+- !private ["Ps11CVarArgType", "defaultNSError"]
+- !private ["Ps11CVarArgType", "defer"]
+- ["Ps11CVarArgType", "dispose"]
+- ["Ps11CVarArgType", "disposed"]
+- !private ["Ps11CVarArgType", "enabled"]
+- !private ["Ps11CVarArgType", "execute"]
+- !private ["Ps11CVarArgType", "immediateScheduler"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "mainThreadScheduler"]
+- ["Ps11CVarArgType", "schedule"]
+- ["Ps11CVarArgType", "scheduleAfter"]
+- !private ["Ps11CVarArgType", "subscribeNext"]
+- ["Ps11CVarArgType", "toAction"]
+- ["Ps11CVarArgType", "toSignalProducer"]
+- !private ["Ps28CustomDebugStringConvertible", "Action"]
+- !private ["Ps28CustomDebugStringConvertible", "MutableProperty"]
+- !private ["Ps28CustomDebugStringConvertible", "NSDate"]
+- !private ["Ps28CustomDebugStringConvertible", "RACSignal"]
+- !private ["Ps28CustomDebugStringConvertible", "SignalProducer"]
+- !private ["Ps28CustomDebugStringConvertible", "Wrapped"]
+- !private ["Ps28CustomDebugStringConvertible", "after"]
+- !private ["Ps28CustomDebugStringConvertible", "createSignal"]
+- ["Ps28CustomDebugStringConvertible", "currentDate"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultNSError"]
+- !private ["Ps28CustomDebugStringConvertible", "defer"]
+- ["Ps28CustomDebugStringConvertible", "dispose"]
+- ["Ps28CustomDebugStringConvertible", "disposed"]
+- !private ["Ps28CustomDebugStringConvertible", "enabled"]
+- !private ["Ps28CustomDebugStringConvertible", "error"]
+- !private ["Ps28CustomDebugStringConvertible", "execute"]
+- !private ["Ps28CustomDebugStringConvertible", "immediateScheduler"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "mainThreadScheduler"]
+- ["Ps28CustomDebugStringConvertible", "schedule"]
+- ["Ps28CustomDebugStringConvertible", "scheduleAfter"]
+- !private ["Ps28CustomDebugStringConvertible", "subscribeNext"]
+- ["Ps28CustomDebugStringConvertible", "toAction"]
+- ["Ps28CustomDebugStringConvertible", "toSignalProducer"]
+- !private ["Ps23CustomStringConvertible", "Action"]
+- !private ["Ps23CustomStringConvertible", "Completed"]
+- !private ["Ps23CustomStringConvertible", "Failed"]
+- !private ["Ps23CustomStringConvertible", "Interrupted"]
+- !private ["Ps23CustomStringConvertible", "MutableProperty"]
+- !private ["Ps23CustomStringConvertible", "NSDate"]
+- !private ["Ps23CustomStringConvertible", "Next"]
+- !private ["Ps23CustomStringConvertible", "RACSignal"]
+- !private ["Ps23CustomStringConvertible", "SignalProducer"]
+- !private ["Ps23CustomStringConvertible", "Wrapped"]
+- !private ["Ps23CustomStringConvertible", "after"]
+- !private ["Ps23CustomStringConvertible", "createSignal"]
+- ["Ps23CustomStringConvertible", "currentDate"]
+- !private ["Ps23CustomStringConvertible", "defaultNSError"]
+- !private ["Ps23CustomStringConvertible", "defer"]
+- ["Ps23CustomStringConvertible", "dispose"]
+- ["Ps23CustomStringConvertible", "disposed"]
+- !private ["Ps23CustomStringConvertible", "enabled"]
+- !private ["Ps23CustomStringConvertible", "error"]
+- !private ["Ps23CustomStringConvertible", "execute"]
+- !private ["Ps23CustomStringConvertible", "immediateScheduler"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "mainThreadScheduler"]
+- ["Ps23CustomStringConvertible", "schedule"]
+- ["Ps23CustomStringConvertible", "scheduleAfter"]
+- !private ["Ps23CustomStringConvertible", "subscribeNext"]
+- ["Ps23CustomStringConvertible", "toAction"]
+- ["Ps23CustomStringConvertible", "toSignalProducer"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "NSDate"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "RACTargetQueueScheduler"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "after"]
+- ["P13ReactiveCocoa17DateSchedulerType", "currentDate"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "immediateScheduler"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "init"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "mainThreadScheduler"]
+- !private ["P13ReactiveCocoa17DateSchedulerType", "queue"]
+- ["P13ReactiveCocoa17DateSchedulerType", "schedule"]
+- ["P13ReactiveCocoa17DateSchedulerType", "scheduleAfter"]
+- ["P13ReactiveCocoa17DateSchedulerType", ""]
+- ["P13ReactiveCocoa10Disposable", "dispose"]
+- ["P13ReactiveCocoa10Disposable", "disposed"]
+- !private ["P13ReactiveCocoa10Disposable", "init"]
+- ["P13ReactiveCocoa10Disposable", ""]
+- !private ["Ps9Equatable", "Action"]
+- !private ["Ps9Equatable", "MutableProperty"]
+- !private ["Ps9Equatable", "NSDate"]
+- !private ["Ps9Equatable", "RACSignal"]
+- !private ["Ps9Equatable", "SignalProducer"]
+- !private ["Ps9Equatable", "Wrapped"]
+- !private ["Ps9Equatable", "after"]
+- !private ["Ps9Equatable", "createSignal"]
+- ["Ps9Equatable", "currentDate"]
+- !private ["Ps9Equatable", "defaultNSError"]
+- !private ["Ps9Equatable", "defer"]
+- ["Ps9Equatable", "dispose"]
+- ["Ps9Equatable", "disposed"]
+- !private ["Ps9Equatable", "enabled"]
+- !private ["Ps9Equatable", "execute"]
+- !private ["Ps9Equatable", "immediateScheduler"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "mainThreadScheduler"]
+- ["Ps9Equatable", "schedule"]
+- ["Ps9Equatable", "scheduleAfter"]
+- !private ["Ps9Equatable", "subscribeNext"]
+- ["Ps9Equatable", "toAction"]
+- ["Ps9Equatable", "toSignalProducer"]
+- !private ["O13ReactiveCocoa5Event", "Completed"]
+- !private ["O13ReactiveCocoa5Event", "Failed"]
+- !private ["O13ReactiveCocoa5Event", "Interrupted"]
+- !private ["O13ReactiveCocoa5Event", "Next"]
+- !private ["P13ReactiveCocoa9EventType", "Completed"]
+- !private ["P13ReactiveCocoa9EventType", "Failed"]
+- !private ["P13ReactiveCocoa9EventType", "Interrupted"]
+- !private ["P13ReactiveCocoa9EventType", "Next"]
+- !private ["Ps23FloatLiteralConvertible", "Wrapped"]
+- !private ["Ps8Hashable", "Action"]
+- !private ["Ps8Hashable", "MutableProperty"]
+- !private ["Ps8Hashable", "NSDate"]
+- !private ["Ps8Hashable", "RACSignal"]
+- !private ["Ps8Hashable", "SignalProducer"]
+- !private ["Ps8Hashable", "Wrapped"]
+- !private ["Ps8Hashable", "after"]
+- !private ["Ps8Hashable", "createSignal"]
+- ["Ps8Hashable", "currentDate"]
+- !private ["Ps8Hashable", "defaultNSError"]
+- !private ["Ps8Hashable", "defer"]
+- ["Ps8Hashable", "dispose"]
+- ["Ps8Hashable", "disposed"]
+- !private ["Ps8Hashable", "enabled"]
+- !private ["Ps8Hashable", "execute"]
+- !private ["Ps8Hashable", "immediateScheduler"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "mainThreadScheduler"]
+- ["Ps8Hashable", "schedule"]
+- ["Ps8Hashable", "scheduleAfter"]
+- !private ["Ps8Hashable", "subscribeNext"]
+- ["Ps8Hashable", "toAction"]
+- ["Ps8Hashable", "toSignalProducer"]
+- ["C13ReactiveCocoa18ImmediateScheduler", "RACScheduler"]
+- ["C13ReactiveCocoa18ImmediateScheduler", "toRACScheduler"]
+- !private ["SQ", "deinit"]
+- !private ["Ps25IntegerLiteralConvertible", "Wrapped"]
+- !private ["C13ReactiveCocoa15MutableProperty", "Value"]
+- !private ["C13ReactiveCocoa15MutableProperty", "deinit"]
+- !private ["C13ReactiveCocoa15MutableProperty", "init"]
+- !private ["P13ReactiveCocoa19MutablePropertyType", "Value"]
+- !private ["P13ReactiveCocoa19MutablePropertyType", "init"]
+- !private ["PSo8NSCoding", "Wrapped"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "Wrapped"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["CSo6NSDate", "init"]
+- !private ["CSo8NSNumber", "Wrapped"]
+- ["CSo8NSObject", "Action"]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "Disposable"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "MutableProperty"]
+- ["CSo8NSObject", "NSDate"]
+- ["CSo8NSObject", "NSError"]
+- ["CSo8NSObject", "NSTimeInterval"]
+- !private ["CSo8NSObject", "NoError"]
+- !private ["CSo8NSObject", "RACDisposable"]
+- !private ["CSo8NSObject", "RACSignal"]
+- ["CSo8NSObject", "SignalProducer"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "Wrapped"]
+- !private ["CSo8NSObject", "after"]
+- !private ["CSo8NSObject", "createSignal"]
+- ["CSo8NSObject", "currentDate"]
+- !private ["CSo8NSObject", "defaultNSError"]
+- !private ["CSo8NSObject", "defer"]
+- ["CSo8NSObject", "dispose"]
+- ["CSo8NSObject", "disposed"]
+- !private ["CSo8NSObject", "enabled"]
+- !private ["CSo8NSObject", "execute"]
+- !private ["CSo8NSObject", "immediateScheduler"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "mainThreadScheduler"]
+- ["CSo8NSObject", "schedule"]
+- ["CSo8NSObject", "scheduleAfter"]
+- !private ["CSo8NSObject", "subscribeNext"]
+- ["CSo8NSObject", "toAction"]
+- ["CSo8NSObject", "toSignalProducer"]
+- !private ["PSo16NSObjectProtocol", "Action"]
+- !private ["PSo16NSObjectProtocol", "MutableProperty"]
+- !private ["PSo16NSObjectProtocol", "NSDate"]
+- !private ["PSo16NSObjectProtocol", "RACSignal"]
+- !private ["PSo16NSObjectProtocol", "SignalProducer"]
+- !private ["PSo16NSObjectProtocol", "Wrapped"]
+- !private ["PSo16NSObjectProtocol", "after"]
+- !private ["PSo16NSObjectProtocol", "createSignal"]
+- ["PSo16NSObjectProtocol", "currentDate"]
+- !private ["PSo16NSObjectProtocol", "defaultNSError"]
+- !private ["PSo16NSObjectProtocol", "defer"]
+- ["PSo16NSObjectProtocol", "dispose"]
+- ["PSo16NSObjectProtocol", "disposed"]
+- !private ["PSo16NSObjectProtocol", "enabled"]
+- !private ["PSo16NSObjectProtocol", "execute"]
+- !private ["PSo16NSObjectProtocol", "immediateScheduler"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "mainThreadScheduler"]
+- ["PSo16NSObjectProtocol", "schedule"]
+- ["PSo16NSObjectProtocol", "scheduleAfter"]
+- !private ["PSo16NSObjectProtocol", "sendCompleted"]
+- !private ["PSo16NSObjectProtocol", "sendError"]
+- !private ["PSo16NSObjectProtocol", "sendNext"]
+- !private ["PSo16NSObjectProtocol", "subscribeNext"]
+- ["PSo16NSObjectProtocol", "toAction"]
+- ["PSo16NSObjectProtocol", "toSignalProducer"]
+- !private ["PSo14NSSecureCoding", "Wrapped"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo7NSValue", "Wrapped"]
+- !private ["Ps21NilLiteralConvertible", "Wrapped"]
+- !private ["Ps21NilLiteralConvertible", "init"]
+- !private ["V13ReactiveCocoa8Observer", "sendCompleted"]
+- !private ["V13ReactiveCocoa8Observer", "sendFailed"]
+- !private ["V13ReactiveCocoa8Observer", "sendNext"]
+- !private ["Sq", "Wrapped"]
+- !private ["Sq", "deinit"]
+- !private ["Sq", "init"]
+- ["P13ReactiveCocoa12OptionalType", "Wrapped"]
+- !private ["P13ReactiveCocoa12OptionalType", "init"]
+- !private ["P13ReactiveCocoa12OptionalType", "optional"]
+- !private ["P13ReactiveCocoa12PropertyType", "Value"]
+- !private ["P13ReactiveCocoa12PropertyType", "init"]
+- !private ["P13ReactiveCocoa12PropertyType", "producer"]
+- ["C13ReactiveCocoa14QueueScheduler", "RACScheduler"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "RACTargetQueueScheduler"]
+- !private ["C13ReactiveCocoa14QueueScheduler", "queue"]
+- ["C13ReactiveCocoa14QueueScheduler", "toRACScheduler"]
+- ["CSo10RACCommand", "Action"]
+- ["CSo10RACCommand", "AnyObject"]
+- !private ["CSo10RACCommand", "Bool"]
+- ["CSo10RACCommand", "Int"]
+- !private ["CSo10RACCommand", "MutableProperty"]
+- ["CSo10RACCommand", "NSError"]
+- !private ["CSo10RACCommand", "NoError"]
+- !private ["CSo10RACCommand", "RACSignal"]
+- !private ["CSo10RACCommand", "SignalProducer"]
+- ["CSo10RACCommand", "String"]
+- !private ["CSo10RACCommand", "enabled"]
+- !private ["CSo10RACCommand", "execute"]
+- !private ["CSo10RACCommand", "init"]
+- ["CSo10RACCommand", "toAction"]
+- ["CSo13RACDisposable", "deinit"]
+- ["CSo13RACDisposable", "dispose"]
+- ["CSo13RACDisposable", "disposed"]
+- !private ["CSo13RACDisposable", "init"]
+- !private ["CSo17RACQueueScheduler", "init"]
+- ["CSo12RACScheduler", "Disposable"]
+- ["CSo12RACScheduler", "NSDate"]
+- ["CSo12RACScheduler", "NSTimeInterval"]
+- !private ["CSo12RACScheduler", "RACDisposable"]
+- !private ["CSo12RACScheduler", "after"]
+- ["CSo12RACScheduler", "currentDate"]
+- ["CSo12RACScheduler", "deinit"]
+- !private ["CSo12RACScheduler", "immediateScheduler"]
+- !private ["CSo12RACScheduler", "init"]
+- !private ["CSo12RACScheduler", "mainThreadScheduler"]
+- ["CSo12RACScheduler", "schedule"]
+- ["CSo12RACScheduler", "scheduleAfter"]
+- ["CSo9RACSignal", "AnyObject"]
+- ["CSo9RACSignal", "Int"]
+- ["CSo9RACSignal", "NSError"]
+- ["CSo9RACSignal", "SignalProducer"]
+- ["CSo9RACSignal", "String"]
+- !private ["CSo9RACSignal", "createSignal"]
+- !private ["CSo9RACSignal", "defaultNSError"]
+- !private ["CSo9RACSignal", "defer"]
+- !private ["CSo9RACSignal", "subscribeNext"]
+- ["CSo9RACSignal", "toSignalProducer"]
+- ["CSo9RACStream", "AnyObject"]
+- ["CSo9RACStream", "Int"]
+- ["CSo9RACStream", "NSError"]
+- ["CSo9RACStream", "SignalProducer"]
+- ["CSo9RACStream", "String"]
+- !private ["CSo9RACStream", "createSignal"]
+- !private ["CSo9RACStream", "defaultNSError"]
+- !private ["CSo9RACStream", "defer"]
+- !private ["CSo9RACStream", "subscribeNext"]
+- ["CSo9RACStream", "toSignalProducer"]
+- !private ["PSo13RACSubscriber", "sendCompleted"]
+- !private ["PSo13RACSubscriber", "sendError"]
+- !private ["PSo13RACSubscriber", "sendNext"]
+- !private ["CSo23RACTargetQueueScheduler", "init"]
+- !private ["O6Result6Result", "error"]
+- !private ["P6Result10ResultType", "error"]
+- !private ["P13ReactiveCocoa13SchedulerType", "NSDate"]
+- !private ["P13ReactiveCocoa13SchedulerType", "RACScheduler"]
+- !private ["P13ReactiveCocoa13SchedulerType", "RACTargetQueueScheduler"]
+- !private ["P13ReactiveCocoa13SchedulerType", "after"]
+- ["P13ReactiveCocoa13SchedulerType", "currentDate"]
+- !private ["P13ReactiveCocoa13SchedulerType", "immediateScheduler"]
+- !private ["P13ReactiveCocoa13SchedulerType", "init"]
+- !private ["P13ReactiveCocoa13SchedulerType", "mainThreadScheduler"]
+- !private ["P13ReactiveCocoa13SchedulerType", "queue"]
+- ["P13ReactiveCocoa13SchedulerType", "schedule"]
+- ["P13ReactiveCocoa13SchedulerType", "scheduleAfter"]
+- ["P13ReactiveCocoa13SchedulerType", ""]
+- !private ["C13ReactiveCocoa6Signal", "Error"]
+- !private ["C13ReactiveCocoa6Signal", "Value"]
+- !private ["C13ReactiveCocoa6Signal", "deinit"]
+- !private ["C13ReactiveCocoa6Signal", "map"]
+- !private ["C13ReactiveCocoa6Signal", "optionalize"]
+- !private ["C13ReactiveCocoa6Signal", "toRACSignal"]
+- !private ["V13ReactiveCocoa14SignalProducer", "Error"]
+- !private ["V13ReactiveCocoa14SignalProducer", "Value"]
+- !private ["V13ReactiveCocoa14SignalProducer", "deinit"]
+- !private ["V13ReactiveCocoa14SignalProducer", "flatMapError"]
+- !private ["V13ReactiveCocoa14SignalProducer", "init"]
+- !private ["V13ReactiveCocoa14SignalProducer", "map"]
+- !private ["V13ReactiveCocoa14SignalProducer", "toRACSignal"]
+- ["P13ReactiveCocoa18SignalProducerType", "AnyObject"]
+- ["P13ReactiveCocoa18SignalProducerType", "Error"]
+- ["P13ReactiveCocoa18SignalProducerType", "NSError"]
+- ["P13ReactiveCocoa18SignalProducerType", "OptionalType"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "RACDisposable"]
+- ["P13ReactiveCocoa18SignalProducerType", "RACSignal"]
+- ["P13ReactiveCocoa18SignalProducerType", "Value"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "flatMapError"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "init"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "lift"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "map"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "mapError"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "start"]
+- ["P13ReactiveCocoa18SignalProducerType", "toRACSignal"]
+- ["P13ReactiveCocoa10SignalType", "AnyObject"]
+- ["P13ReactiveCocoa10SignalType", "Error"]
+- ["P13ReactiveCocoa10SignalType", "NSError"]
+- !private ["P13ReactiveCocoa10SignalType", "Optional"]
+- ["P13ReactiveCocoa10SignalType", "OptionalType"]
+- !private ["P13ReactiveCocoa10SignalType", "RACDisposable"]
+- ["P13ReactiveCocoa10SignalType", "RACSignal"]
+- !private ["P13ReactiveCocoa10SignalType", "Signal"]
+- ["P13ReactiveCocoa10SignalType", "Value"]
+- !private ["P13ReactiveCocoa10SignalType", "map"]
+- !private ["P13ReactiveCocoa10SignalType", "mapError"]
+- !private ["P13ReactiveCocoa10SignalType", "observe"]
+- !private ["P13ReactiveCocoa10SignalType", "optionalize"]
+- !private ["P13ReactiveCocoa10SignalType", "signal"]
+- ["P13ReactiveCocoa10SignalType", "toRACSignal"]
+- ["C13ReactiveCocoa11UIScheduler", "RACScheduler"]
+- ["C13ReactiveCocoa11UIScheduler", "toRACScheduler"]
+- !private ["Ps12_Reflectable", "Wrapped"]
+- !private ["Ps12_Reflectable", "init"]
+depends-nominal:
+- "C13ReactiveCocoa6Action"
+- !private "O13ReactiveCocoa11ActionError"
+- "Ps9AnyObject"
+- !private "V13ReactiveCocoa11AnyProperty"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "P13ReactiveCocoa17DateSchedulerType"
+- "P13ReactiveCocoa10Disposable"
+- "Ps9Equatable"
+- !private "O13ReactiveCocoa5Event"
+- !private "P13ReactiveCocoa9EventType"
+- !private "Ps23FloatLiteralConvertible"
+- "Ps8Hashable"
+- "C13ReactiveCocoa18ImmediateScheduler"
+- !private "SQ"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "C13ReactiveCocoa15MutableProperty"
+- !private "P13ReactiveCocoa19MutablePropertyType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSDate"
+- !private "CSo8NSNumber"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo7NSValue"
+- !private "Ps21NilLiteralConvertible"
+- !private "V13ReactiveCocoa8Observer"
+- !private "Sq"
+- "P13ReactiveCocoa12OptionalType"
+- !private "P13ReactiveCocoa12PropertyType"
+- "C13ReactiveCocoa14QueueScheduler"
+- "CSo10RACCommand"
+- "CSo13RACDisposable"
+- !private "CSo17RACQueueScheduler"
+- "CSo12RACScheduler"
+- "CSo9RACSignal"
+- "CSo9RACStream"
+- !private "PSo13RACSubscriber"
+- !private "CSo23RACTargetQueueScheduler"
+- !private "O6Result6Result"
+- !private "P6Result10ResultType"
+- "P13ReactiveCocoa13SchedulerType"
+- !private "C13ReactiveCocoa6Signal"
+- !private "V13ReactiveCocoa14SignalProducer"
+- "P13ReactiveCocoa18SignalProducerType"
+- "P13ReactiveCocoa10SignalType"
+- "C13ReactiveCocoa11UIScheduler"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACObjCRuntime.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIControl+RACSignalSupportPrivate.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UISwitch+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UISlider+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIRefreshControl+RACCommandSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIImagePickerController+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/MKAnnotationView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIActionSheet+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIAlertView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIBarButtonItem+RACCommandSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIDatePicker+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIStepper+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UITextView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UITextField+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UITableViewHeaderFooterView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UITableViewCell+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UISegmentedControl+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIGestureRecognizer+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIControl+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UICollectionReusableView+RACSignalSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/UIButton+RACCommandSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/ReactiveCocoa.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/ReactiveCocoa-Bridging-Header.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACValueTransformer.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACUnit.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACUnarySequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACTupleSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACTuple.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACTestScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACTargetQueueScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSubscriptionScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSubscriptingAssignmentTrampoline.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACStringSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSignalSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSignal+Operations.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSerialDisposable.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACScopedDisposable.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACReturnSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACReplaySubject.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACScheduler+Subclass.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACQueueScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACQueueScheduler+Subclass.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACPassthroughSubscriber.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACMulticastConnection.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACKVOTrampoline.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACKVOProxy.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACKVOChannel.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACIndexSetSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACImmediateScheduler.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACGroupedSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACEvent.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACErrorSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACEagerSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDynamicSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDynamicSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDynamicPropertySuperclass.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDelegateProxy.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACDisposable.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACCompoundDisposable.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACCommand.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACChannel.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACBlockTrampoline.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSubscriber.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSubject.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACBehaviorSubject.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACStream.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACSequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/RACArraySequence.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSUserDefaults+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSURLConnection+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSString+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSString+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSString+RACKeyPathUtilities.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSSet+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSOrderedSet+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACSelectorSignal.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACPropertySubscribing.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACLifting.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACKVOWrapper.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACDescription.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSObject+RACDeallocating.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSNotificationCenter+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSInvocation+RACTypeParsing.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSIndexSet+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSFileHandle+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSEnumerator+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSDictionary+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSData+RACSupport.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/NSArray+RACSequenceAdditions.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/extobjc/EXTScope.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/ReactiveCocoa/ReactiveCocoa/Objective-C/extobjc/metamacros.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Headers/Private/ReactiveCocoa/ReactiveCocoa/EXTKeyPathCoding.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Target Support Files/ReactiveCocoa/ReactiveCocoa-umbrella.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Intermediates/Pods.build/Debug-iphonesimulator/ReactiveCocoa.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Result.framework/Modules/Result.swiftmodule/x86_64.swiftmodule"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Products/Debug-iphonesimulator/Result.framework/Headers/Result-Swift.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/Pods/Target Support Files/Result/Result-umbrella.h"
+- "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/RayCore/FlickrSwift/DerivedData/FlickrSwift/Build/Intermediates/Pods.build/Debug-iphonesimulator/Result.build/module.modulemap"
+interface-hash: "a6aa2894cdc65f7877f93e0339031f4a"
